@@ -1,0 +1,76 @@
+type;id;name;note;role;key;sameAs
+person;robert-frescher;robert frescher;Traducteur et commentateur français début XVIe siècle actif à la cour de Louis XII, auteur de ce manuscrit;author;ark:/43093/pdata6064efe5b4a12dbfc81c1da5e4cfb06385880ee0;https://portail.biblissima.fr/en/ark:/43093/pdata6064efe5b4a12dbfc81c1da5e4cfb06385880ee0
+person;berose;Beroſe;Pseudo-Bérose, auteur d'une Defloratio chaldaique imprimée à Rome en 1498, source majeure des Antiquitates d’Annius de Viterbe;source;Q312425;https://www.wikidata.org/wiki/Q312425
+person;flavius-josephe;iozephe;Historiographe romain juif du Ier siècle, auteur des Antiquités judaïques, cité comme source historique;source;Q134461;https://www.wikidata.org/wiki/Q134461
+person;metasthene;metaſtenes;Pseudo-Métasthène, auteur d'un Jugement des temps imprimé à Rome en 1498, source des Antiquitates d’Annius de Viterbe;source;;
+person;noe;noe;Patriarche biblique, fils de Lamech, père de Sem, Cham et Japhet, survivant du Déluge;character;Q81422;https://www.wikidata.org/wiki/Q81422
+person;alexandre-le-grand;alixãdre;Roi de Macédoine et conquérant célèbre du IVᵉ siècle av. J.-C.;character;Q8409;https://www.wikidata.org/wiki/Q8409
+person;pline-l-ancien;pline;Naturaliste et auteur romain du Ier siècle, cité pour son Histoire naturelle;source;Q82778;https://www.wikidata.org/wiki/Q82778
+person;adam;adam;Premier homme selon la tradition biblique, père de Seth;character;Q70899;https://www.wikidata.org/wiki/Q70899
+person;janus;ianus;Divinité romaine des commencements, identifié à Noé à la suite des Antiquitates d'Annius de Viterbe;character;Q167685;https://www.wikidata.org/wiki/Q167685
+person;francus;francus;Ancêtre troyen des Francs, mentionné dans les chroniques médiévales et par Manéthon;character;Q1442723;https://www.wikidata.org/wiki/Q1442723
+person;ptolemee;tholomee;Astronome et géographe gréco-égyptien du IIᵉ siècle, auteur de la Géographie;source;Q34943;https://www.wikidata.org/wiki/Q34943
+person;diodore-de-sicile;dydore;Historien grec du Ier siècle av. J.-C., auteur de la Bibliothèque historique, cité comme source;source;Q171241;https://www.wikidata.org/wiki/Q171241
+person;moise;moyſe;Prophète biblique, auteur traditionnel du Pentateuque (Genèse, Exode), figure centrale du judaïsme;source;Q9077;https://www.wikidata.org/wiki/Q9077
+person;philon-d-alexandrie;filo;Pseudo-Philon d'Alexandrie, source imprimée dans les Antiquitates d'Annius de Viterbe (non l’authentique philosophe du Ier siècle);source;Q189597;https://www.wikidata.org/wiki/Q189597
+person;seth;ſeth;Troisième fils d’Adam et Ève, père d’Enosh;character;Q107626;https://www.wikidata.org/wiki/Q107626
+person;enosh;Enos;Petit-fils d’Adam, fils de Seth, père de Kénan;character;Q682531;https://www.wikidata.org/wiki/Q682531
+person;kenan;Caynam;Arrière-petit-fils d’Adam, fils d’Enosh, père de Mahalalel;character;Q844433;https://www.wikidata.org/wiki/Q844433
+person;mahalalel;Malaleel;Descendant d’Adam, fils de Kénan, père de Yared;character;Q10297002;https://www.wikidata.org/wiki/Q10297002
+person;yared;Iareth;Fils de Mahalalel, père d’Hénoch;character;Q927410;https://www.wikidata.org/wiki/Q927410
+person;henoch;Enoc;Fils de Yared, père de Mathusalem, enlevé au ciel sans mourir;character;Q213027;https://www.wikidata.org/wiki/Q213027
+person;mathusalem;Mathusalẽ;Fils d’Hénoch, père de Lamech, célèbre pour sa longévité;character;Q156290;https://www.wikidata.org/wiki/Q156290
+person;lemek;Lameth;Fils de Mathusalem, père de Noé;character;Q10921342;https://www.wikidata.org/wiki/Q10921342
+person;tytea;tydea;Épouse de Noé selon la Defloratio de pseudo-Bérose, non attestée bibliquement;character;;
+person;sem;Sem;Fils aîné de Noé, ancêtre des peuples sémites;character;Q200902;https://www.wikidata.org/wiki/Q200902
+person;japhet;Iaphet;Fils de Noé, ancêtre des peuples européens;character;Q200637;https://www.wikidata.org/wiki/Q200637
+person;cham;cam;Fils de Noé, ancêtre des peuples africains;character;Q229702;https://www.wikidata.org/wiki/Q229702
+person;pandora;pendora;Fille de Noé selon la Defloratio de pseudo-Bérose, non attestée bibliquement;character;;
+person;noela;noella;Fille de Noé selon la Defloratio de pseudo-Bérose, non attestée bibliquement;character;;
+person;noegla;noegla;Fille de Noé selon la Defloratio de pseudo-Bérose, non attestée bibliquement;character;;
+person;comerus-gallus;Comerus gallus;Fils de Japhet, premier roi d'Italie après Janus dans la Defloratio de pseudo-Bérose, identifié au Gomer biblique;character;Q1148172;https://www.wikidata.org/wiki/Q1148172
+person;medus;medus;Fils de Japhet, ancêtre des Mèdes;character;;
+person;magog;magogus;Fils de Japhet, ancêtre des Magogites;character;Q1964706;https://www.wikidata.org/wiki/Q1964706
+person;samothes;ſamothes;Fils de Japhet, premier roi des Celtes après le Déluge, ayant régné vers le XXIIIᵉ siècle av. J.-C. selon la Defloratio de pseudo-Bérose;character;;
+person;tubal;Tubal;Fils de Japhet, ancêtre des Ibères et des Tartessiens;character;Q1481766;https://www.wikidata.org/wiki/Q1481766
+person;iubal;Iubal moſeus;Fils de Japhet dans la Defloratio de pseudo-Bérose, non attesté bibliquement;character;;
+person;tiras;Tiras;Fils de Japhet, ancêtre des Thraces;character;Q1481751;https://www.wikidata.org/wiki/Q1481751
+person;ion;Ion;Fils de Japhet, ancêtre des Ioniens;character;Q1684266;https://www.wikidata.org/wiki/Q1684266
+person;diogene-laerce;dyogenes laercius;Philosophe grec du IIIᵉ siècle, auteur de biographies philosophiques, cité comme source;source;Q59138;https://www.wikidata.org/wiki/Q59138
+person;aristote;ariſtote;Philosophe grec majeur du IVᵉ siècle av. J.-C., cité comme source;source;Q868;https://www.wikidata.org/wiki/Q868
+person;sotion;scecio;Philosophe péripatéticien grec du IIᵉ siècle av. J.-C., auteur des Successions des philosophes;source;;
+person;jules-cesar;cezar;Conquérant et homme politique romain du Ier siècle av. J.-C., cité pour ses Commentaires sur la Guerre des Gaules;source;Q1048;https://www.wikidata.org/wiki/Q1048
+person;cadmos;cadmus;Héros grec, réputé pour avoir introduit l’alphabet en Grèce;character;Q27613;https://www.wikidata.org/wiki/Q27613
+person;galatee;galathea;Fille du roi Celte Samothes, mère de Galathes par Hercule de Lybie;character;Q241070;https://www.wikidata.org/wiki/Q241070
+person;galathes;galathes;Fils d’Hercule et de Galathea, dixième roi des Celtes après Celtes, éponyme des Gaulois, ayant régné vers le XVIIIᵉ siècle av. J.-C.;character;;
+person;magus;magus;Premier fils de Samothes, deuxième roi des Celtes après Samothes, bâtisseur de plusieurs villes, ayant régné vers le XXIIᵉ siècle av. J.-C.;character;;
+person;sarron;ſarron;Deuxième fils de Samothes, troisième roi des Celtes après Magus, fondateur des écoles publiques et des universités ayant régné vers le XXIᵉ siècle av. J.-C.;character;;
+person;namnes;Nannes;Fils de Samothes;character;;
+person;dryus;dryudes;Fils de Samothes, quatrième roi des Celtes après Sarron, fondateur de l'ordre des druides, ayant régné vers le XXIᵉ siècle av. J.-C.;character;;
+person;bardus;bardus;Fils de Samothes, cinquième roi des Celtes après Dryus, ayant régné vers le XXᵉ siècle av. J.-C., inventeur des vers et chants, éponyme des bardes;character;;
+person;longhus;longo; Fils de Samothes, sixième roi des Celtes après Bardus I, ayant régné vers le XXᵉ siècle av. J.-C., fondateur des Langres (Lingons);character;;
+person;bardus-ii;bardus iie;Fils de Samothes, septième roi des Celtes après Longhus, deuxième du nom Bardus, dit le jeune, ayant régné vers le XIXᵉ siècle av. J.-C.;character;;
+person;lucain;lucan;Poète et historien romain du Ier siècle, auteur de la Pharsale;source;Q188646;https://www.wikidata.org/wiki/Q188646
+person;suetone;ſuetone;Historien et biographe romain du Ier-IIᵉ siècle, auteur des Vies des douze Césars;source;Q10133;https://www.wikidata.org/wiki/Q10133
+person;lucus;lucus;Huitième roi des Celtes après Bardus II, ayant régné vers le XIXᵉ siècle av. J.-C., éponyme des Lucarches près de Paris;character;;
+person;celtes;celtes;Neuvième roi des Celtes après Lucus, éponyme de la Gaule celtique ayant régné vers le XVIIIᵉ siècle av. J.-C.;character;;
+person;hercule-de-libye;hercules degipte;Hercule d’Égypte, fils d'Osiris, père de Galathes dans la Defloratio de pseudo-Bérose, vainqueur de Géryon, à ne pas confondre avec l'Hercule des Grecs;character;Q122248;https://www.wikidata.org/wiki/Q122248
+person;gerion;berion;Géant vaincu par Hercule, tyran d'Espagne dans la Defloratio de pseudo-Bérose;character;Q86805;https://www.wikidata.org/wiki/Q86805
+person;paul-de-tarse;ſainct paol;Apôtre chrétien du Ier siècle, auteur des Épîtres, cité pour ses lettres aux Galates;source;Q9200;https://www.wikidata.org/wiki/Q9200
+person;solin;ſolinus;Compilateur et géographe latin du IIIᵉ siècle, auteur du Collectanea rerum memorabilium;source;Q520487;https://www.wikidata.org/wiki/Q520487
+person;manethon;manethon;Pseudo-Manéthon, auteur d'une Supplementum à Bérose imprimé à Rome en 1498, source majeure des Antiquitates d’Annius de Viterbe;source;Q174380;https://www.wikidata.org/wiki/Q174380
+person;ilos;ilus;Fils de Dardanos, ancêtre des rois de Troie;character;Q638979;https://www.wikidata.org/wiki/Q638979
+person;galathes-ii;galathes ſecond;Dix-neuvième roi des Celtes après son père Olbius, ayant régné vers le XIIIᵉ siècle av. J.-C. et conquérant en Asie selon le Supplementum de pseudo-Manéthon;character;;
+person;belgius;belgius;Treizième roi des Celtes après Lugdus, éponyme de la Gaule belgique;character;;
+person;altades;altades;Roi de Babylone contemporain de Galathes II, mentionné dans la Defloratio de pseudo-Bérose;character;;
+person;harbon;harbon;Onzième roi des Celtes après Galathes, éponyme de Narbonne;character;;
+person;lugdus;lugdus;Douzième roi des Celtes après Harbon, éponyme de Lugdunum (Lyon), ayant régné vers le XVIIᵉ siècle av. J.-C.;character;;
+person;annius-de-viterbe;iehan de viterbe;Historien, faussaire et frère dominicain italien du XVe siècle, auteur des Antiquitates imprimées à Rome en 1498;source;Q567224;https://www.wikidata.org/wiki/Q567224
+person;allobrox;allobrox;Quatorzième roi des Celtes après Belgius, éponyme des Allobroges, ayant régné vers le XVIᵉ siècle av. J.-C.;character;;
+person;jerome-de-stridon;ſainct iheroſme;Père de l’Église et traducteur de la Bible en latin (Vulgate), IVᵉ-Vᵉ siècle;source;Q44248;https://www.wikidata.org/wiki/Q44248
+person;romus;Romus;Quinzième roi des Celtes après Allobrox, éponyme des Romands, ayant régné vers le XVᵉ siècle av. J.-C.;character;;
+person;paris;paris;Seizième roi des Celtes après Romus, ayant régné vers le XVᵉ siècle av. J.-C., éponyme de la ville de Paris;character;;
+person;thomas-d-aquin;ſainct thomas daquĩ;Théologien et philosophe chrétien du XIIIᵉ siècle, docteur de l’Église, professeur à Paris;character;Q9438;https://www.wikidata.org/wiki/Q9438
+person;lemannus;le mãnus;Dix-septième roi des Celtes après Paris, ayant régné vers le XIVᵉ siècle av. J.-C., éponyme du lac Léman;character;;
+person;olbius;olbius;Dix-huitième roi des Celtes après Lemannus, ayant régné vers le XIVᵉ siècle av. J.-C., père de Galathes II;character;;
+

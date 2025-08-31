@@ -1,0 +1,14 @@
+cd "C:\humanites_numeriques\memoire\projet_hn_lorenzo_paoli"
+
+.\scripts\transform_tei2html.ps1
+
+.\scripts\transform_tei2html_sd.ps1
+
+.\scripts\transform-tei2tex.ps1 -Compile
+
+.\scripts\Build-SearchIndex.ps1
+
+Start-Process "http://localhost:8000"
+powershell -Command "& {python -m http.server 8000}"
+
+

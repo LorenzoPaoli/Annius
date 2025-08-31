@@ -1,0 +1,1318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>BnF. Bibliothèque de l'Arsenal, MS-5219 réserve, fol. 1r–8r</title>
+        <author>Robert Frescher</author>
+        <respStmt xml:id="resp1">
+          <resp>Édition, encodage et annotation</resp>
+          <persName>Lorenzo Paoli</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Université de Genève</publisher>
+        <date when="2025-05-26">26 mai 2025</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc xml:id="ms5219">
+          <msIdentifier>
+            <country>France</country>
+            <repository>Bibliothèque nationale de France. Bibliothèque de l’Arsenal</repository>
+            <idno>Ms. 5219 réserve</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>Manuscrit enluminé de 168 folios, contenant en ouverture (fol. 1r–8r) une
+              traduction en moyen français des antiquités gauloises d’après Annius de Viterbe,
+              suivie du Devisement du Monde de Marco Polo.</summary>
+            <msItem>
+              <locus>1r–8r</locus>
+              <title>Traduction partielle et commentée de la Defloratio de Bérose et du Supplementum
+                de Manéthon</title>
+              <author>Robert Frescher</author>
+            </msItem>
+            <msItem>
+              <locus>9r–168v</locus>
+              <title>Le Devisement du Monde</title>
+              <author>Marco Polo</author>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc>
+              <supportDesc>
+                <support>Parchemin, écriture gothique cursiva formata.</support>
+                <extent>168 folios au total. Édition numérique sur les seuls folios 1r–8r.</extent>
+              </supportDesc>
+            </objectDesc>
+          </physDesc>
+          <history>
+            <origin>
+              <origDate notBefore="1500" notAfter="1511">ca. 1510–1511</origDate>
+              <origPlace>France, probablement Paris</origPlace>
+            </origin>
+            <provenance>
+              <p>Collection de Charles Adrien Picard (1742), entrée ultérieurement à la Bibliothèque
+                de l’Arsenal.</p>
+            </provenance>
+          </history>
+          <additional>
+            <adminInfo>
+              <availability>
+                <p>Le manuscrit complet est consultable en ligne sur <ref
+                    target="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc854071">BnF Archives et
+                    manuscrits</ref>. </p>
+              </availability>
+            </adminInfo>
+          </additional>
+        </msDesc>
+        <listBibl>
+          <!-- Sources bibliques -->
+          <bibl xml:id="bibl-moise" corresp="moise">
+            <author>Moïse</author>
+            <title>Pentateuque (attribuée)</title>
+            <idno type="wikidata">Q9184</idno>
+          </bibl>
+
+          <bibl xml:id="bibl-paul-de-tarse" corresp="paul-de-tarse">
+            <author>Paul de Tarse</author>
+            <title>Épîtres aux Galates (attribué)</title>
+            <idno type="wikidata">Q128620</idno>
+          </bibl>
+
+          <!-- Sources anciennes -->
+          <bibl xml:id="bibl-flavius-josephe-antiquites" corresp="flavius-josephe">
+            <author>Flavius Josèphe</author>
+            <title>Antiquités judaïques</title>
+            <idno type="wikidata">Q1232616</idno>
+          </bibl>
+
+          <bibl xml:id="bibl-flavius-josephe-contre-apion" corresp="flavius-josephe">
+            <author>Flavius Josèphe</author>
+            <title>Contre Apion</title>
+            <idno type="wikidata">Q331135</idno>
+          </bibl>
+
+
+          <bibl xml:id="bibl-lucain" corresp="lucain">
+            <author>Lucain</author>
+            <title>Pharsale</title>
+            <idno type="wikidata">Q678375</idno>
+          </bibl>
+
+          <bibl xml:id="bibl-suetone" corresp="suetone">
+            <author>Suétone</author>
+            <title>Vies des douze Césars</title>
+            <idno type="wikidata">Q1229963</idno>
+          </bibl>
+
+          <bibl xml:id="bibl-jules-cesar" corresp="jules-cesar">
+            <author>Jules César</author>
+            <title>Commentaires sur la Guerre des Gaules</title>
+            <idno type="wikidata">Q106199</idno>
+          </bibl>
+
+          <bibl xml:id="bibl-pline-l-ancien" corresp="pline-l-ancien">
+            <author>Pline l’Ancien</author>
+            <title>Histoire naturelle</title>
+            <idno type="wikidata">Q442</idno>
+          </bibl>
+
+          <bibl xml:id="bibl-diodore-de-sicile" corresp="diodore-de-sicile">
+            <author>Diodore de Sicile</author>
+            <title>Bibliothèque historique</title>
+            <idno type="wikidata">Q672803</idno>
+          </bibl>
+
+          <bibl xml:id="bibl-ptolemee" corresp="ptolemee">
+            <author>Ptolémée</author>
+            <title>Géographie</title>
+            <idno type="wikidata">Q1194350</idno>
+          </bibl>
+
+          <bibl xml:id="bibl-aristote" corresp="aristote">
+            <author>Aristote</author>
+            <title>Magique (attribué)</title>
+            <note>Œuvre mentionnée par Diogène Laërce, mais non conservée.</note>
+          </bibl>
+
+          <bibl xml:id="bibl-sotion" corresp="sotion">
+            <author>Sotion</author>
+            <title>Successions des philosophes</title>
+            <note>Œuvre mentionnée par Diogène Laërce, mais non conservée.</note>
+          </bibl>
+
+          <bibl xml:id="bibl-diogene-laerce" corresp="diogene-laerce">
+            <author>Diogène Laërce</author>
+            <title>Vies et doctrines des philosophes illustres</title>
+            <idno type="wikidata">Q1282359</idno>
+          </bibl>
+
+          <bibl xml:id="bibl-solin" corresp="solin">
+            <author>Solin</author>
+            <title>Polyhistor</title>
+            <idno type="wikidata">Q3395604</idno>
+          </bibl>
+
+          <bibl xml:id="bibl-jerome-de-stridon" corresp="jerome-de-stridon">
+            <author>Saint Jérôme</author>
+            <title>De Nominibus Hebraicis</title>
+          </bibl>
+
+          <!-- Sources imprimées dans les Antiquitates d'Annius de Viterbe -->
+          <bibl xml:id="bibl-annius-de-viterbe" corresp="annius-de-viterbe">
+            <author>Annius de Viterbe</author>
+            <title>Commentaria super opera diversorum auctorum de antiquitatibus loquentium</title>
+            <pubPlace>Rome</pubPlace>
+            <publisher>Eucharius Silber</publisher>
+            <date when="1498">1498</date>
+            <idno type="wikidata">Q3618786</idno>
+            <note>Source pour la traduction et le commentaire de Robert Frescher ; toutes les autres
+              sources mentionnées le sont à travers les Antiquitates d’Annius de Viterbe.</note>
+            <bibl xml:id="bibl-berose" corresp="berose">
+              <author>Pseudo-Bérose</author>
+              <title>Defloratio berosi chaldaica, libri quinque</title>
+              <note>Annius de Viterbe, Commentaria, f. Nviiir-Yvr</note>
+            </bibl>
+            <bibl xml:id="bibl-metasthene" corresp="metasthene">
+              <author>Pseudo-Métasthène</author>
+              <title>Liber de iudicium temporum</title>
+              <note>Annius de Viterbe, Commentaria, f. Evir-Eviiiv</note>
+            </bibl>
+            <bibl xml:id="bibl-manethon" corresp="manethon">
+              <author>Pseudo-Manéthon</author>
+              <title>Supplementum ad berosum</title>
+              <note>Annius de Viterbe, Commentaria, f. Yvv-Zviiiv</note>
+            </bibl>
+            <bibl xml:id="bibl-philon-d-alexandrie" corresp="philon-d-alexandrie">
+              <author>Pseudo-Philon d’Alexandrie</author>
+              <title>Breviarum de temporibus, libri duo</title>
+              <note>Annius de Viterbe, Commentaria, f. Gr-Hviiir</note>
+            </bibl>
+          </bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Édition numérique scientifique, centrée exclusivement sur les folios 1r–8r de la
+          traduction partielle en moyen français des Antiquitates d’Annius de Viterbe, réalisée par
+          Robert Frescher, concernant la dynastie des rois gaulois postdiluviens.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>Transcription graphématique.</p>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="robert-frescher" role="author">
+            <persName>robert frescher</persName>
+            <note>Traducteur et commentateur français début XVIe siècle actif à la cour de Louis
+              XII, auteur de ce manuscrit</note>
+            <idno type="biblissima">ark:/43093/pdata6064efe5b4a12dbfc81c1da5e4cfb06385880ee0</idno>
+            <idno type="uri"
+              >https://portail.biblissima.fr/en/ark:/43093/pdata6064efe5b4a12dbfc81c1da5e4cfb06385880ee0</idno>
+          </person>
+          <person xml:id="berose" role="source">
+            <persName>Beroſe</persName>
+            <note>Pseudo-Bérose, auteur d'une Defloratio chaldaica en cinq livres imprimée à Rome en 1498 dans les
+              Antiquitates d’Annius de Viterbe (non l’authentique Bérose du IVer siècle av.
+              J.-C.)</note>
+            <idno type="wikidata">Q312425</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q312425</idno>
+          </person>
+          <person xml:id="flavius-josephe" role="source">
+            <persName>iozephe</persName>
+            <note>Historiographe romain juif du Ier siècle, auteur des Antiquités judaïques et du
+              Contre Apion</note>
+            <idno type="wikidata">Q134461</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q134461</idno>
+          </person>
+          <person xml:id="metasthene" role="source">
+            <persName>metaſtenes</persName>
+            <note>Pseudo-Métasthène, auteur d'un Liber de iudicium temporum imprimé à Rome en 1498
+              dans les Antiquitates d’Annius de Viterbe (non l’authentique Mégasthène du IVer siècle
+              av. J.-C.)</note>
+          </person>
+          <person xml:id="noe" role="personnage">
+            <persName>noe</persName>
+            <note>Patriarche biblique, fils de Lamech, père de Sem, Cham et Japhet, survivant du
+              Déluge</note>
+            <idno type="wikidata">Q81422</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q81422</idno>
+          </person>
+          <person xml:id="alexandre-le-grand" role="personnage">
+            <persName>alixãdre</persName>
+            <note>Roi de Macédoine et conquérant célèbre du IVᵉ siècle av. J.-C.</note>
+            <idno type="wikidata">Q8409</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q8409</idno>
+          </person>
+          <person xml:id="pline-l-ancien" role="source">
+            <persName>pline</persName>
+            <note>Naturaliste et auteur romain du Ier siècle, cité pour son Histoire
+              naturelle</note>
+            <idno type="wikidata">Q82778</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q82778</idno>
+          </person>
+          <person xml:id="adam" role="personnage">
+            <persName>adam</persName>
+            <note>Premier homme selon la tradition biblique, père de Seth</note>
+            <idno type="wikidata">Q70899</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q70899</idno>
+          </person>
+          <person xml:id="janus" role="personnage">
+            <persName>ianus</persName>
+            <note>Divinité romaine des commencements, identifié à Noé à la suite des Antiquitates
+              d'Annius de Viterbe</note>
+            <idno type="wikidata">Q167685</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q167685</idno>
+          </person>
+          <person xml:id="francus" role="personnage">
+            <persName>francus</persName>
+            <note>Ancêtre troyen des Francs, mentionné dans les chroniques médiévales et par
+              Manéthon</note>
+            <idno type="wikidata">Q1442723</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q1442723</idno>
+          </person>
+          <person xml:id="ptolemee" role="source">
+            <persName>tholomee</persName>
+            <note>Astronome et géographe gréco-égyptien du IIᵉ siècle, auteur de la
+              Géographie</note>
+            <idno type="wikidata">Q34943</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q34943</idno>
+          </person>
+          <person xml:id="diodore-de-sicile" role="source">
+            <persName>dydore</persName>
+            <note>Historien grec du Ier siècle av. J.-C., auteur de la Bibliothèque
+              historique</note>
+            <idno type="wikidata">Q171241</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q171241</idno>
+          </person>
+          <person xml:id="moise" role="source">
+            <persName>moyſe</persName>
+            <note>Prophète biblique, auteur traditionnel du Pentateuque</note>
+            <idno type="wikidata">Q9077</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q9077</idno>
+          </person>
+          <person xml:id="philon-d-alexandrie" role="source">
+            <persName>filo</persName>
+            <note>Pseudo-Philon d'Alexandrie auteur d'un Breviarium de temporibus, source imprimée dans les Antiquitates d'Annius de
+              Viterbe (non l’authentique philosophe du Ier siècle)</note>
+            <idno type="wikidata">Q189597</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q189597</idno>
+          </person>
+          <person xml:id="seth" role="personnage">
+            <persName>ſeth</persName>
+            <note>Troisième fils d’Adam et Ève, père d’Enosh</note>
+            <idno type="wikidata">Q107626</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q107626</idno>
+          </person>
+          <person xml:id="enosh" role="personnage">
+            <persName>Enos</persName>
+            <note>Petit-fils d’Adam, fils de Seth, père de Kénan</note>
+            <idno type="wikidata">Q682531</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q682531</idno>
+          </person>
+          <person xml:id="kenan" role="personnage">
+            <persName>Caynam</persName>
+            <note>Arrière-petit-fils d’Adam, fils d’Enosh, père de Mahalalel</note>
+            <idno type="wikidata">Q844433</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q844433</idno>
+          </person>
+          <person xml:id="mahalalel" role="personnage">
+            <persName>Malaleel</persName>
+            <note>Descendant d’Adam, fils de Kénan, père de Yared</note>
+            <idno type="wikidata">Q10297002</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q10297002</idno>
+          </person>
+          <person xml:id="yared" role="personnage">
+            <persName>Iareth</persName>
+            <note>Fils de Mahalalel, père d’Hénoch</note>
+            <idno type="wikidata">Q927410</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q927410</idno>
+          </person>
+          <person xml:id="henoch" role="personnage">
+            <persName>Enoc</persName>
+            <note>Fils de Yared, père de Mathusalem, enlevé au ciel sans mourir</note>
+            <idno type="wikidata">Q213027</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q213027</idno>
+          </person>
+          <person xml:id="mathusalem" role="personnage">
+            <persName>Mathusalẽ</persName>
+            <note>Fils d’Hénoch, père de Lamech, célèbre pour sa longévité</note>
+            <idno type="wikidata">Q156290</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q156290</idno>
+          </person>
+          <person xml:id="lemek" role="personnage">
+            <persName>Lameth</persName>
+            <note>Fils de Mathusalem, père de Noé</note>
+            <idno type="wikidata">Q10921342</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q10921342</idno>
+          </person>
+          <person xml:id="tytea" role="personnage">
+            <persName>tydea</persName>
+            <note>Épouse de Noé selon la Defloratio de pseudo-Bérose, non attestée
+              bibliquement</note>
+          </person>
+          <person xml:id="sem" role="personnage">
+            <persName>Sem</persName>
+            <note>Fils aîné de Noé, ancêtre des peuples sémites</note>
+            <idno type="wikidata">Q200902</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q200902</idno>
+          </person>
+          <person xml:id="japhet" role="personnage">
+            <persName>Iaphet</persName>
+            <note>Fils de Noé, ancêtre des peuples européens</note>
+            <idno type="wikidata">Q200637</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q200637</idno>
+          </person>
+          <person xml:id="cham" role="personnage">
+            <persName>cam</persName>
+            <note>Fils de Noé, ancêtre des peuples africains</note>
+            <idno type="wikidata">Q229702</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q229702</idno>
+          </person>
+          <person xml:id="pandora" role="personnage">
+            <persName>pendora</persName>
+            <note>Fille de Noé selon la Defloratio de pseudo-Bérose, non attestée
+              bibliquement</note>
+          </person>
+          <person xml:id="noela" role="personnage">
+            <persName>noella</persName>
+            <note>Fille de Noé selon la Defloratio de pseudo-Bérose, non attestée
+              bibliquement</note>
+          </person>
+          <person xml:id="noegla" role="personnage">
+            <persName>noegla</persName>
+            <note>Fille de Noé selon la Defloratio de pseudo-Bérose, non attestée
+              bibliquement</note>
+          </person>
+          <person xml:id="comerus-gallus" role="personnage">
+            <persName>Comerus gallus</persName>
+            <note>Fils de Japhet, premier roi d'Italie après Janus, identifié au Gomer
+              biblique</note>
+            <idno type="wikidata">Q1148172</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q1148172</idno>
+          </person>
+          <person xml:id="medus" role="personnage">
+            <persName>medus</persName>
+            <note>Fils de Japhet, ancêtre des Mèdes</note>
+          </person>
+          <person xml:id="magog" role="personnage">
+            <persName>magogus</persName>
+            <note>Fils de Japhet, ancêtre des Magogites</note>
+            <idno type="wikidata">Q1964706</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q1964706</idno>
+          </person>
+          <person xml:id="samothes" role="personnage">
+            <persName>ſamothes</persName>
+            <note>Fils de Japhet, premier roi des Celtes après le Déluge, ayant régné vers le XXIIIᵉ
+              siècle av. J.-C. selon la Defloratio de pseudo-Bérose</note>
+          </person>
+          <person xml:id="tubal" role="personnage">
+            <persName>Tubal</persName>
+            <note>Fils de Japhet, ancêtre des Ibères et des Tartessiens</note>
+            <idno type="wikidata">Q1481766</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q1481766</idno>
+          </person>
+          <person xml:id="iubal" role="personnage">
+            <persName>Iubal moſeus</persName>
+            <note>Fils de Japhet dans la Defloratio de pseudo-Bérose, non attesté
+              bibliquement</note>
+          </person>
+          <person xml:id="tiras" role="personnage">
+            <persName>Tiras</persName>
+            <note>Fils de Japhet, ancêtre des Thraces</note>
+            <idno type="wikidata">Q1481751</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q1481751</idno>
+          </person>
+          <person xml:id="ion" role="personnage">
+            <persName>Ion</persName>
+            <note>Fils de Japhet, ancêtre des Ioniens</note>
+            <idno type="wikidata">Q1684266</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q1684266</idno>
+          </person>
+          <person xml:id="diogene-laerce" role="source">
+            <persName>dyogenes laercius</persName>
+            <note>Philosophe grec du IIIᵉ siècle, auteur de biographies philosophiques, cité comme
+              source</note>
+            <idno type="wikidata">Q59138</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q59138</idno>
+          </person>
+          <person xml:id="aristote" role="source">
+            <persName>ariſtote</persName>
+            <note>Philosophe grec majeur du IVᵉ siècle av. J.-C., cité comme source</note>
+            <idno type="wikidata">Q868</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q868</idno>
+          </person>
+          <person xml:id="sotion" role="source">
+            <persName>scecio</persName>
+            <note>Philosophe péripatéticien grec du IIᵉ siècle av. J.-C., auteur des Successions des
+              philosophes</note>
+          </person>
+          <person xml:id="jules-cesar" role="source">
+            <persName>cezar</persName>
+            <note>Conquérant et homme politique romain du Ier siècle av. J.-C., cité pour ses
+              Commentaires sur la Guerre des Gaules</note>
+            <idno type="wikidata">Q1048</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q1048</idno>
+          </person>
+          <person xml:id="cadmos" role="personnage">
+            <persName>cadmus</persName>
+            <note>Héros grec, réputé pour avoir introduit l’alphabet en Grèce</note>
+            <idno type="wikidata">Q27613</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q27613</idno>
+          </person>
+          <person xml:id="galatee" role="personnage">
+            <persName>galathea</persName>
+            <note>Fille du roi Celte Samothes, mère de Galathes par Hercule de Lybie</note>
+            <idno type="wikidata">Q241070</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q241070</idno>
+          </person>
+          <person xml:id="galathes" role="personnage">
+            <persName>galathes</persName>
+            <note>Fils d’Hercule et de Galathéa, dixième roi des Celtes après Celtes, éponyme des
+              Gaulois, ayant régné vers le XVIIIᵉ siècle av. J.-C.</note>
+          </person>
+          <person xml:id="magus" role="personnage">
+            <persName>magus</persName>
+            <note>Premier fils de Samothes, deuxième roi des Celtes après Samothes, bâtisseur de
+              plusieurs villes, ayant régné vers le XXIIᵉ siècle av. J.-C.</note>
+          </person>
+          <person xml:id="sarron" role="personnage">
+            <persName>ſarron</persName>
+            <note>Deuxième fils de Samothes, troisième roi des Celtes après Magus, fondateur des
+              écoles publiques et des universités ayant régné vers le XXIᵉ siècle av. J.-C.</note>
+          </person>
+          <person xml:id="namnes" role="personnage">
+            <persName>Nannes</persName>
+            <note>Fils de Samothes</note>
+          </person>
+          <person xml:id="dryus" role="personnage">
+            <persName>dryudes</persName>
+            <note>Fils de Samothes, quatrième roi des Celtes après Sarron, fondateur de l'ordre des
+              druides, ayant régné vers le XXIᵉ siècle av. J.-C.</note>
+          </person>
+          <person xml:id="bardus" role="personnage">
+            <persName>bardus</persName>
+            <note>Fils de Samothes, cinquième roi des Celtes après Dryus, ayant régné vers le XXᵉ
+              siècle av. J.-C., inventeur des vers et chants, éponyme des bardes</note>
+          </person>
+          <person xml:id="longhus" role="personnage">
+            <persName>longo</persName>
+            <note>Fils de Samothes, sixième roi des Celtes après Bardus I, ayant régné vers le XXᵉ
+              siècle av. J.-C., fondateur des Langres (Lingons)</note>
+          </person>
+          <person xml:id="bardus-ii" role="personnage">
+            <persName>bardus iie</persName>
+            <note>Fils de Samothes, septième roi des Celtes après Longhus, deuxième du nom Bardus,
+              dit le jeune, ayant régné vers le XIXᵉ siècle av. J.-C.</note>
+          </person>
+          <person xml:id="lucain" role="source">
+            <persName>lucan</persName>
+            <note>Poète et historien romain du Ier siècle, auteur de la Pharsale</note>
+            <idno type="wikidata">Q188646</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q188646</idno>
+          </person>
+          <person xml:id="suetone" role="source">
+            <persName>ſuetone</persName>
+            <note>Historien et biographe romain du Ier-IIᵉ siècle, auteur des Vies des douze
+              Césars</note>
+            <idno type="wikidata">Q10133</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q10133</idno>
+          </person>
+          <person xml:id="lucus" role="personnage">
+            <persName>lucus</persName>
+            <note>Huitième roi des Celtes après Bardus II, ayant régné vers le XIXᵉ siècle av.
+              J.-C., éponyme des Luteces près de Paris</note>
+          </person>
+          <person xml:id="celtes" role="personnage">
+            <persName>celtes</persName>
+            <note>Neuvième roi des Celtes après Lucus, éponyme de la Gaule celtique ayant régné vers
+              le XVIIIᵉ siècle av. J.-C.</note>
+          </person>
+          <person xml:id="hercule-de-libye" role="personnage">
+            <persName>hercules degipte</persName>
+            <note>Hercule d’Égypte, fils d'Osiris, père de Galathes dans la Defloratio de
+              pseudo-Bérose, vainqueur de Géryon, à ne pas confondre avec l'Hercule des Grecs</note>
+            <idno type="wikidata">Q122248</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q122248</idno>
+          </person>
+          <person xml:id="gerion" role="personnage">
+            <persName><choice>
+                <sic>berion</sic>
+                <corr>gerion</corr>
+              </choice></persName>
+            <note>Géant vaincu par Hercule, tyran d'Espagne dans la Defloratio de
+              pseudo-Bérose</note>
+            <idno type="wikidata">Q86805</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q86805</idno>
+          </person>
+          <person xml:id="paul-de-tarse" role="source">
+            <persName>ſainct paol</persName>
+            <note>Apôtre chrétien du Ier siècle, auteur des Épîtres, cité pour ses lettres aux
+              Galates</note>
+            <idno type="wikidata">Q9200</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q9200</idno>
+          </person>
+          <person xml:id="solin" role="source">
+            <persName>ſolinus</persName>
+            <note>Compilateur et géographe latin du IIIᵉ siècle, auteur du Collectanea rerum
+              memorabilium</note>
+            <idno type="wikidata">Q520487</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q520487</idno>
+          </person>
+          <person xml:id="manethon" role="source">
+            <persName>manethon</persName>
+            <note>Pseudo-Manéthon, auteur d'un Supplementum ad berosum imprimé à Rome en 1498 dans les Antiquitates d’Annius de Viterbe (non l’authentique Manéthon du IIIer siècle av. J.-C.)</note>
+            <idno type="wikidata">Q174380</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q174380</idno>
+          </person>
+          <person xml:id="ilos" role="personnage">
+            <persName>ilus</persName>
+            <note>Fils de Dardanos, ancêtre des rois de Troie</note>
+            <idno type="wikidata">Q638979</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q638979</idno>
+          </person>
+          <person xml:id="galathes-ii" role="personnage">
+            <persName>galathes ſecond</persName>
+            <note>Dix-neuvième roi des Celtes après son père Olbius, ayant régné vers le XIIIᵉ
+              siècle av. J.-C. et conquérant en Asie selon le Supplementum de pseudo-Manéthon</note>
+          </person>
+          <person xml:id="belgius" role="personnage">
+            <persName>belgius</persName>
+            <note>Treizième roi des Celtes après Lugdus, éponyme de la Gaule belgique</note>
+          </person>
+          <person xml:id="altades" role="personnage">
+            <persName>altades</persName>
+            <note>Roi de Babylone contemporain de Galathes II, mentionné dans la Defloratio de
+              pseudo-Bérose</note>
+          </person>
+          <person xml:id="harbon" role="personnage">
+            <persName>harbon</persName>
+            <note>Onzième roi des Celtes après Galathes, éponyme de Narbonne</note>
+          </person>
+          <person xml:id="lugdus" role="personnage">
+            <persName>lugdus</persName>
+            <note>Douzième roi des Celtes après Harbon, éponyme de Lugdunum (Lyon), ayant régné vers
+              le XVIIᵉ siècle av. J.-C.</note>
+          </person>
+          <person xml:id="annius-de-viterbe" role="source">
+            <persName>iehan de viterbe</persName>
+            <note>Historien, faussaire et frère dominicain italien du XVe siècle, auteur des
+              Antiquitates imprimées à Rome en 1498</note>
+            <idno type="wikidata">Q567224</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q567224</idno>
+          </person>
+          <person xml:id="allobrox" role="personnage">
+            <persName>allobrox</persName>
+            <note>Quatorzième roi des Celtes après Belgius, éponyme des Allobroges, ayant régné vers
+              le XVIᵉ siècle av. J.-C.</note>
+          </person>
+          <person xml:id="jerome-de-stridon" role="source">
+            <persName>ſainct iheroſme</persName>
+            <note>Père de l’Église et traducteur de la Bible en latin (Vulgate), IVᵉ-Vᵉ
+              siècle</note>
+            <idno type="wikidata">Q44248</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q44248</idno>
+          </person>
+          <person xml:id="romus" role="personnage">
+            <persName>Romus</persName>
+            <note>Quinzième roi des Celtes après Allobrox, éponyme des Romands, ayant régné vers le
+              XVᵉ siècle av. J.-C.</note>
+          </person>
+          <person xml:id="paris" role="personnage">
+            <persName>paris</persName>
+            <note>Seizième roi des Celtes après Romus, ayant régné vers le XVᵉ siècle av. J.-C.,
+              éponyme de la ville de Paris</note>
+          </person>
+          <person xml:id="thomas-d-aquin" role="personnage">
+            <persName>ſainct thomas daquĩ</persName>
+            <note>Théologien et philosophe chrétien du XIIIᵉ siècle, docteur de l’Église, professeur
+              à Paris</note>
+            <idno type="wikidata">Q9438</idno>
+            <idno type="uri">https://www.wikidata.org/wiki/Q9438</idno>
+          </person>
+          <person xml:id="lemannus" role="personnage">
+            <persName>le mãnus</persName>
+            <note>Dix-septième roi des Celtes après Paris, ayant régné vers le XIVᵉ siècle av.
+              J.-C., éponyme du lac Léman</note>
+          </person>
+          <person xml:id="olbius" role="personnage">
+            <persName>olbius</persName>
+            <note>Dix-huitième roi des Celtes après Lemannus, ayant régné vers le XIVᵉ siècle av.
+              J.-C., père de Galathes II</note>
+          </person>
+        </listPerson>
+      </particDesc>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2025-05-26" who="#resp1">Création du fichier enrichi TEI.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <ab><pb n="1" facs="assets/facs/f_1r.jpg"/><lb n="1"/>Dela Bibliothẽ. de Charles Adrien Picard
+          1742</ab>
+      </div>
+      <div>
+        <head><lb n="1"/>Prologue du preſent liure par maiſtre <persName ref="robert-frescher"
+            role="author" key="ark:/43093/pdata6064efe5b4a12dbfc81c1da5e4cfb06385880ee0"
+            sameAs="https://portail.biblissima.fr/en/ark:/43093/pdata6064efe5b4a12dbfc81c1da5e4cfb06385880ee0"
+              >robert<lb n="2"/>freſcher</persName> bachelier forme en theologie tranſlateur.</head>
+        <p><lb n="1"/><persName ref="berose" role="source" key="Q312425"
+            sameAs="https://www.wikidata.org/wiki/Q312425">Beroſe</persName> ainſi que <persName
+            ref="flavius-josephe" role="source" key="Q134461"
+            sameAs="https://www.wikidata.org/wiki/Q134461">iozephe</persName> nous <ref
+            target="#bibl-flavius-josephe-antiquites" n="I.3.6">a laiſſe par eſcript</ref><lb n="2"
+          />fut natif de la cite de babilone il eſtoit pbr̃e coronique.ͬ<lb n="3"/>et notaire public
+          car pour lors loffice des pbrẽs eſtoit<lb n="4"/>de rediger par eſcript le temps que les
+          roys regnoyent<lb n="5"/>ensemble leurs geſtes et beaulx faitz comme recite<lb n="6"
+            /><persName ref="metasthene" role="source">metaſtenes</persName> au <ref
+            target="#bibl-metasthene">liure des iugemens des temps</ref>. Et a<lb n="7"/>ceſte cauſe
+          fiſt <ref target="#bibl-berose">ung extrait des fleurs des yſtoires<lb n="8"
+            />caldaiques</ref> en laquelle il a obſerue le temps et anti¬<lb n="9"/>quites depuis le
+          deluge qui fut du temps de <persName ref="noe" role="personnage" key="Q81422"
+            sameAs="https://www.wikidata.org/wiki/Q81422">noe</persName> ꝑ<lb n="10"/>eſcript son
+          hyſtoire pendent la monarchie d<persName ref="alexandre-le-grand" role="personnage"
+            key="Q8409" sameAs="https://www.wikidata.org/wiki/Q8409">alixãdre</persName><lb n="11"
+          />le grant qui eſtoit deuant lincarnation enuiron<lb n="12"/>iii.ͨ ans. Et de la creation
+          du monde iiii.ͫ uiii.ͨ lix<lb n="13"/>en langue grecque fut treſexpert regent en
+            philozophie<lb n="14"/>en luniuerſite dathenes du quel comme dit <persName
+            ref="pline-l-ancien" role="source" key="Q82778"
+            sameAs="https://www.wikidata.org/wiki/Q82778">pline</persName>
+          <cit>
+            <quote>les<lb n="15"/>atheniens auoyent telle extime quilz firent faire a ſõ<lb n="16"
+              />honneur ung ymaige ayant la langue doree qui fut<lb n="17"/>colloque en vne des
+              eſcolles publicque ou il faiſoit<lb n="18"/>les lectures </quote>
+            <ref target="#bibl-pline-l-ancien" n="VII,37"/>
+          </cit> il a compoſe <ref target="#bibl-berose">vng petit volume diuiſe<lb n="19"/>en cinq
+            liures</ref>. Au premier duquel recite ce que ont<lb n="20"/>eſcript les caldaicques du
+          temps depuis <persName ref="adam" role="personnage" key="Q70899"
+            sameAs="https://www.wikidata.org/wiki/Q70899">adam</persName> iuſqẽ<lb n="21"/>au
+          deluge. Au ſecond de la genealogie des premiers<lb n="22"/>roys princes et ſeigneurs qui
+          premieremẽt regnerent<lb n="23"/>apres le deluge. au iii ͤ de lantiquite de <persName
+            ref="#noe">noe</persName> et com<lb n="24"/>ment Il fut nomme <persName ref="janus"
+            role="personnage" key="Q167685" sameAs="https://www.wikidata.org/wiki/Q167685">
+            ianus</persName> dont eſt nõe ianuarius<lb n="25"/>le mois de iãuier. au iiii.ͤ des
+          antiquites des</p>
+        <fw type="stamp"/>
+        <ab><pb n="2" facs="assets/facs/f_1v.jpg"/><lb n="1"/>royaumes de toute la terre en general. Au
+            cinquieſ.ͤ<lb n="2"/>dun chaſcun royaume en particulier. A ceſte cauſe<lb n="3"/>ſire
+          dautant quil na point obmis a parler du<lb n="4"/>royaume de france comme vous pourres
+            ouẏr<lb n="5"/>par lectre de ce pñt liure en pourſuiuant ce que<lb n="6"/>ledit
+            <persName ref="#berose">beroſe</persName> et depuis luy maintes en ont eſcript<lb n="7"
+          />iuſques a <persName ref="francus" role="personnage" key="Q1442723"
+            sameAs="https://www.wikidata.org/wiki/Q1442723">francus</persName> dont ſont ditz les
+          francoys ien<lb n="8"/>ay fait vng extrait en adiouſtant ce q̃ <persName ref="ptolemee"
+            role="source" key="Q34943" sameAs="https://www.wikidata.org/wiki/Q34943"
+            >tholomee</persName><lb n="9"/><persName ref="#pline-l-ancien"> pline</persName>
+          <persName ref="diodore-de-sicile" role="source" key="Q171241"
+            sameAs="https://www.wikidata.org/wiki/Q171241"> dydore</persName>
+          <persName ref="#flavius-josephe"> Iosephe</persName> et autres pluſieurs ont eſcript<lb
+            n="10"/>sur ceſte matiere ce que iay fait affin que plus<lb n="11"/>facillement par aide
+          de teſmoins on adiouſte foẏ<lb n="12"/>a ce quilz en ont eſcript. Et ainſi que vr̃e
+            treſilluſtre<lb n="13"/>et diuin eſcript eſt touſiours doulz et begnin a<lb n="14"
+          />receuoir le labeur tant ſoit de petite extime de voz<lb n="15"/>treshumbles ſubgectz et
+          moindres ſeruiteurs. Il<lb n="16"/>vous plaira ſire auoir leuure aggreable. Car ie<lb
+            n="17"/>ne lay fait ſinõ affin que vr̃e treſdiuin ẽtendem̃t<lb n="18"/>y preigne
+          quelque foy recreation comme bien voꝰ<lb n="19"/>en ſuyuez en lectures de geſtes enciens
+          des treſmana¬<lb n="20"/>nimes empereurs roys et princes qui deuant vous<lb n="21"/>ont
+          regne. Et neuſſe voulu mettre la main aleuure<lb n="22"/>ſinõ que euidentement par diuers
+          acteurs dignes<lb n="23"/>de foẏ iaẏ congneu la choſe qui dedans eſt recitee<lb n="24"
+          />eſtre veritable. Et croy que apres <persName ref="moise" role="source" key="Q9077"
+            sameAs="https://www.wikidata.org/wiki/Q9077">moyſe</persName> qui a eſcript<lb n="25"
+            /><ref target="#bibl-moise">les premiers liures de noſtre ſaincte eſcripture</ref>
+            nya<lb n="26"/>eu hyſtoriagraphe qui ſoit plus approuche de la<lb n="27"/>verite et
+          auſſi que peu de gens qui ont veu <ref target="#bibl-annius-de-viterbe">la cro<lb n="28"
+            />nnique auecques lexpoſiteur dicelle</ref> a grant peine<lb n="29"/>vouldroyent dire au
+          contraire. Et a tant feray fin<lb n="30"/>au prologue pour venir a la proſecution de
+          leuure</ab>
+        <ab>
+          <pb n="3" facs="assets/facs/f_2r.jpg"/>
+        </ab>
+      </div>
+      <div>
+        <head><lb n="1"/>Du temps depuis <persName ref="#adam">adam</persName> iuſques a <persName
+            ref="#noe">noe</persName></head>
+        <p><lb n="1"/><cit>
+            <quote xml:lang="la">Ante aquarum cladem famoſam qua vniu̾ſus<lb n="2"/>periit orbis
+              multa preterierunt ſecula que a noĩs<lb n="3"/>caldeis fideliter fuerunt
+              ſeruata</quote>
+            <ref target="#bibl-berose" n="f. Ov"/>
+          </cit>. Or dit doncq̃s<lb n="4"/><persName ref="#berose">beroſe</persName> que deuant le
+          deluge eſtoyent pluſieurs<lb n="5"/>ans paſſes lesquelz ont fidelement obſeruez et<lb
+            n="6"/>redige par eſcript les hyſtoriographes caldaicq̃s<lb n="7"/>Car ainſi que recite
+            <persName ref="philon-d-alexandrie" role="source" key="Q189597"
+            sameAs="https://www.wikidata.org/wiki/Q189597">filo</persName> en son <ref
+            target="#bibl-philon-d-alexandrie">breuiaire du<lb n="8"/>temps</ref> depuis <persName
+            ref="#adam">adam</persName> iuſques au deluge ſont cõptez<lb n="9"/>M vi.ͨ lṽi ans. En
+          la premiere ſepmaine du<lb n="10"/>premier an comme eſcript <persName ref="#moise"
+            >moyſe</persName>
+          <ref target="#bibl-moise" n="Gn,1,1-5">au p̾mier chap¬<lb n="11"/>pitre de geneſe</ref>
+          fut cree adam qui engendra pluẜ ͬ ᷤ<lb n="12"/>enfans entre les autres au C et xxx.ͤ an de
+            ſon<lb n="13"/>eage engendra vng nomme <persName ref="seth" role="personnage"
+            key="Q107626" sameAs="https://www.wikidata.org/wiki/Q107626">ſeth</persName> dont
+            deſcendit<lb n="14"/><persName ref="#noe">noe</persName> duquel ſont descendus tous les
+            hommes<lb n="15"/>de pñt comme ſenſuit. <persName ref="#adam">Adam</persName>.
+            <persName ref="seth">Seth</persName>
+          <persName ref="enosh" role="personnage" key="Q682531"
+            sameAs="https://www.wikidata.org/wiki/Q682531"> Enos</persName><lb n="16"/><persName
+            ref="kenan" role="personnage" key="Q844433"
+            sameAs="https://www.wikidata.org/wiki/Q844433">Caynam</persName>. <persName
+            ref="mahalalel" role="personnage" key="Q10297002"
+            sameAs="https://www.wikidata.org/wiki/Q10297002">Malaleel</persName>. <persName
+            ref="yared" role="personnage" key="Q927410"
+            sameAs="https://www.wikidata.org/wiki/Q927410">Iareth</persName>. <persName ref="henoch"
+            role="personnage" key="Q213027" sameAs="https://www.wikidata.org/wiki/Q213027"
+            >Enoc</persName>. <persName ref="mathusalem" role="personnage" key="Q156290"
+            sameAs="https://www.wikidata.org/wiki/Q156290">Mathusalẽ</persName><lb n="17"
+            /><persName ref="lemek" role="personnage" key="Q10921342"
+            sameAs="https://www.wikidata.org/wiki/Q10921342">Lameth</persName>. <persName ref="#noe"
+            >Noe</persName>.</p>
+        <p><lb n="1"/>Depuis <persName ref="#adam">adam</persName> ſont deſcendus les deſſusditz<lb
+            n="2"/>de pere en filz.</p>
+        <p><lb n="1"/><persName ref="noe">Noe</persName> en la creation du monde M v.ͨ lviii ans<lb
+            n="2"/>qui fut deuant le deluge iiii ͯ ͯ xviii ans engẽ<lb n="3"/>dra de ſa femme
+          nõmee <persName ref="tytea" role="personnage">tydea</persName>. <persName ref="sem"
+            role="personnage" key="Q200902" sameAs="https://www.wikidata.org/wiki/Q200902"
+            >Sem</persName>
+          <persName ref="japhet" role="personnage" key="Q200637"
+            sameAs="https://www.wikidata.org/wiki/Q200637"> Iaphet</persName>.<lb n="4"/>et <persName
+            ref="cham" role="personnage" key="Q229702"
+            sameAs="https://www.wikidata.org/wiki/Q229702">cam</persName>. et trois filles nõmees
+            <persName ref="pandora" role="personnage">pendora</persName>
+          <persName ref="noela" role="personnage"> noella</persName><lb n="5"/><persName ref="noegla"
+            role="personnage">noegla</persName> qui ſont huit ꝑſongnages eſquelz fut<lb n="6"/>le
+          genre humain conſerue de la lignee de <persName ref="#japhet">iaphet</persName></p>
+      </div>
+      <div>
+        <head><lb n="1"/>ſecond chappitre. Tranſlateur</head>
+        <p><lb n="1"/>Ie laiſſe a parler des enfans leſquelz <persName ref="#noe">noe</persName>
+            ẽgendra<lb n="2"/>apres le deluge ſemblablement auſſi des lignees</p>
+        <ab><pb n="4" facs="assets/facs/f_2v.jpg"/><lb n="1"/>de <persName ref="#sem">ſem</persName> et
+            <persName ref="#cham">cam</persName> et deduire la lignee de <persName ref="#japhet"
+            >iaphet</persName> ſecond<lb n="2"/>filz de <persName ref="#noe">noe</persName> car ceſt
+          deluy que viendront les p̾miers<lb n="3"/>qui habiterent le pays de france comme ſera
+            eſcript<lb n="4"/>cy apres.</ab>
+        <p><lb n="1"/><persName ref="#japhet">Iaphet</persName> eut huit enfans qui ſenſuiuent<lb
+            n="2"/><persName ref="comerus-gallus" role="personnage" key="Q1148172"
+            sameAs="https://www.wikidata.org/wiki/Q1148172">Comerus gallus</persName>
+          <persName ref="medus" role="personnage"> medus</persName>
+          <persName ref="magog" role="personnage" key="Q1964706"
+            sameAs="https://www.wikidata.org/wiki/Q1964706"> magogus</persName>. <persName
+            ref="samothes" role="personnage">ſamothes</persName><lb n="3"/>autrement nomme <persName
+            ref="#samothes" sameAs="#samothes">dys</persName>
+          <persName ref="tubal" role="personnage" key="Q1481766"
+            sameAs="https://www.wikidata.org/wiki/Q1481766">Tubal</persName> et <persName
+            ref="iubal" role="personnage">Iubal moſeus</persName><lb n="4"/><persName ref="tiras"
+            role="personnage" key="Q1481751" sameAs="https://www.wikidata.org/wiki/Q1481751"
+            >Tiras</persName>
+          <persName ref="ion" role="personnage" key="Q1684266"
+            sameAs="https://www.wikidata.org/wiki/Q1684266">Ion</persName>.</p>
+        <p><lb n="1"/>Des huit enfans de iaphet ie veulx ſeullement en<lb n="2"/>ſuiure la lignee du
+          iiii.ͤ nomme <persName ref="#samothes">Samothes</persName> duquel<lb n="3"/><persName
+            ref="#berose">beroſe</persName> en ſon <ref target="#bibl-berose">cinquieſme liure</ref>
+          parle en telle maniere<lb n="4"/><cit>
+            <quote><persName ref="#samothes">Samothes</persName> en lan Cent quarente apres le
+                deluge<lb n="5"/>fut le premier qui fonda et edifia les villes au pays<lb n="6"
+              />lequel depuis a eſte nomme france cõe ya dit cy apres<lb n="7"/>De ſon temps ne fut
+              trouue homme plus ſaige et<lb n="8"/>deluy ceulx qui depuis furent nõmez francoys
+                eſtoiẽt<lb n="9"/>appeles ſamothes. Les theologiens et grans philoſophes</quote>
+            <ref target="#bibl-berose" n="f. Riir"/>
+          </cit><lb n="10"/>qui ia eſtoyent deſcendus de ſon grant pere <persName ref="#noe"
+            >noe</persName> et de<lb n="11"/>son pere <persName ref="#japhet">iaphet</persName> et
+          de ſes oncles <persName ref="#sem">ſem</persName> et <persName ref="#cham">cam</persName>
+          et autres<lb n="12"/>que engendra <persName ref="#noe">noe</persName> apres le deluge
+          auoyent led̶ <persName ref="#samothes">ſa¬<lb n="13"/>mothes</persName> a merueilleuse
+          reuerance. <persName ref="diogene-laerce" role="source" key="Q59138"
+            sameAs="https://www.wikidata.org/wiki/Q59138">dyogenes laercius</persName><lb n="14"
+          />lequel a escript <ref target="#bibl-diogene-laerce" n="I,prologue,6">la vie des
+            phillozophes</ref> qui ia eſtoyẽt<lb n="15"/>deſcendus dit au commancement de ſon liure
+            dit<lb n="16"/>que philozophie print ſon commancement des ꝑſes<lb n="17"/>leſquelz
+          auoyent tiltres de philozophes appellees<lb n="18"/>mages des babiloniens et aſſiriens ou
+          furent appellez<lb n="19"/>caldaicques et des celtes qui ſont ausourduy nõmes<lb n="20"
+          />francois qui ſe nõmoyent ſamothes leſquelz ſamothes<lb n="21"/>ainſi que teſmoigne
+            <persName ref="aristote" role="source" key="Q868"
+            sameAs="https://www.wikidata.org/wiki/Q868">ariſtote</persName> en ſa <ref
+            target="#bibl-aristote">magicque</ref> et <persName ref="sotion" role="source">s<lb
+              n="22"/>cecio</persName> au <ref target="#bibl-sotion">xxiii.ͤ liure des
+            ſuſceſſions</ref> furent tres ſauãs</p>
+        <ab>
+          <pb n="5" facs="assets/facs/f_3r.jpg"/>
+        </ab>
+        <ab><lb n="1"/>en droit diuin et humain Et a ceſte cauſe trſadonnez<lb n="2"/>a Religion. Et
+          quelque choſe que veulle dire <persName ref="#diogene-laerce">dyogenes</persName><lb n="3"
+          />qui recite que philozophie fut premierement trouuee<lb n="4"/>en grece ceſt erreur tout
+          manifeſte car ainſi que dit<lb n="5"/><persName ref="jules-cesar" role="source"
+            key="Q1048" sameAs="https://www.wikidata.org/wiki/Q1048">cezar</persName> au <ref
+            target="#bibl-jules-cesar" n="VI,14">vi.ͤ liure de ſes cõmentaires</ref> toutes les<lb
+            n="6"/>gaulles ont eu les ſciences et ſauoir des. <persName ref="#samothes"
+            >Samothes</persName><lb n="7"/>ainsi que dyent les grecz les auoyent des <persName
+            ref="#samothes">ſamothes</persName><lb n="8"/>Car deuant le temps de <persName
+            ref="cadmos" role="personnage" key="Q27613"
+            sameAs="https://www.wikidata.org/wiki/Q27613">cadmus</persName> quilz dyent ĩuẽte.ͬ<lb
+            n="9"/>des lectres elles auoyent eſte en france vſitees ẽſemble<lb n="10"/>auſſi les
+          mectres et vers poetiques philozophie theo<lb n="11"/>logie et les loix ainſi appart que
+          quelque choſe que<lb n="12"/>veullent dire pluſieurs hiſtoriographes que le p̾mier<lb
+            n="13"/>Roy de france fut filz du ſecond filz de <persName ref="#noe">noe</persName> qui
+            premier<lb n="14"/>diſtribua les ſciences en france et pluſieurs autres<lb n="15"
+          />regions. Par quoy les grecz ſont faulx et mẽſõgiers<lb n="16"/>qui se veullent
+          atribuer tel honne.ͬ Car longue<lb n="17"/>eſpace de temps deuant que aucune ſcience ne
+            lictera<lb n="18"/>ture floriſt en grece les francois allemans espaignoulz<lb n="19"/>et
+          autres nations les auoyent comme familieres<lb n="20"/>Ceſtuy <persName ref="#samothes"
+            >ſamothes</persName> premier roy de france euſt telle<lb n="21"/>poſterite et
+          lignee.</ab>
+        <p><lb n="1"/><persName ref="#samothes">Samothes</persName> engendra <persName ref="galatee"
+            role="personnage" key="Q241070" sameAs="https://www.wikidata.org/wiki/Q241070"
+            >galathea</persName>. <persName ref="galathes" role="personnage">galathes</persName>
+          <persName ref="magus" role="personnage"> magus</persName><lb n="2"/><persName ref="sarron"
+            role="personnage">ſarron</persName>. <persName ref="namnes" role="personnage"
+            >Nannes</persName>
+          <persName ref="dryus" role="personnage"> dryudes</persName>
+          <persName ref="bardus" role="personnage"> bardus</persName>
+          <persName ref="longhus" role="personnage"> longo</persName>
+          <persName ref="bardus-ii" role="personnage"> bardus ii ͤ</persName><lb n="3"/>de ce nom.
+          Seltes</p>
+      </div>
+      <div>
+        <head><lb n="1"/>Du ii ͤ Roy ͤdes Seltes que nous appellons<lb n="2"/>francoys nomme
+            <persName ref="#magus">magus</persName> chappitre iii ͤ</head>
+        <p><lb n="1"/><persName ref="#magus">Magus</persName> premier filz de <persName
+            ref="#samothes">ſamothes</persName> regna apres ſõ pere.</p>
+      </div>
+      <div>
+        <lb n="1"/>
+        <head>Tranſlateur</head>
+                <p><pb n="6" facs="assets/facs/f_3v.jpg"/><lb n="1"/>Il eſt a noter que ce nom ycy <persName
+            ref="#magus">magus</persName> eſt vng tm̃e<lb n="2"/>ou vocable. Stithien qui vault
+          autant a dire<lb n="3"/>comme edificateur ou batiſſeur de maiſons<lb n="4"/>car les
+          francois vſerent adoncques de ceste lan¬<lb n="5"/>gue bien vray eſt que les perſes disent
+          ce nom<lb n="6"/>magus ſignifier philozophe mais en ce temps<lb n="7"/>la langue des
+          perſes neſtoit encore en vſaige<lb n="8"/><persName ref="#berose">Beroſe</persName> dit
+          que ceſtuy cy fut le premier qui edifia<lb n="9"/>pluſieurs villes et actes . Car comme
+            teſmoigne<lb n="10"/><persName ref="#ptolemee">tholomee</persName> fut par luy edifiee
+          en acquitaine vne<lb n="11"/>cite de luy nommee nomomagus en la gaulle<lb n="12"
+          />lyonnoiſe neomagus rothomagus et nyoma¬<lb n="13"/>qus en la france belgicque vng autre
+            rothoma<lb n="14"/>gus qui eſt la cite principale de normendie<lb n="15"/>nommee Rouen
+          et autre nõmee neomagus<lb n="16"/>Berbethomagus en la gaulle de nerbonne<lb n="17"
+          />edifia deux cites. vindomagus et neomagus<lb n="18"/>Et uilles <persName
+            ref="#jules-cesar">ceſar</persName> en ſes commentaires a nõme<lb n="19"/>en france
+          iuliomagus et teſaromagus . Car<lb n="20"/>toutes cites de ce nom magus eſtoyent
+            appellees<lb n="21"/>magez ie me de porte de dire quelles cites ce ſont<lb n="22"
+          />dautant que aucunes depuis le temps de <persName ref="#ptolemee">tholo¬<lb n="23"
+            />mee</persName> ont eſtes deſtruictes et les autres ont chãge<lb n="24"/>leur nom.
+          Touteſfois il eſt euident q̃ rothoma¬<lb n="25"/>gus eſt rouen en normendie.</p>
+      </div>
+      <div>
+        <head><lb n="1"/>De <persName ref="#sarron">ſarron</persName> ii.ͤ filz de <persName
+            ref="#samothes">ſamothes</persName> troiſieſme<lb n="2"/>Roy des celtes ou francoys
+          chiiii ͤ</head>
+        <p><lb n="1"/><persName ref="#sarron">Sarron</persName> regna apres ſon frẽ <persName
+            ref="#magus">magus</persName> qui<lb n="2"/>fut la pñt qui par auſter aux hoẽs les
+          mauuaiz</p>
+        <ab>
+          <pb n="7" facs="assets/facs/f_4r.jpg"/>
+        </ab>
+        <ab><lb n="1"/>exteraces fiſt les eſcolles publicques que nous<lb n="2"/>diſons vniuersites.
+          Et de luy furent les ſamothes<lb n="3"/>au Iourduy francoys appelles. Saronides aĩſi<lb
+            n="4"/>que dit <persName ref="#diodore-de-sicile">diodore</persName> en son <ref
+            target="#bibl-diodore-de-sicile" n="V,31">vi.ͤ liure</ref> il ya dist il en<lb n="5"/>la
+          france celticque pluſieurs theologiens et phi¬<lb n="6"/>loz ophes qui ſappellent
+          zaronides qui ſont gens<lb n="7"/>de grant eſtime entre les hoẽs et ont telle couſtuẽ<lb
+            n="8"/>que iamais ilz ne font ſacriffice que quelque<lb n="9"/>grant philozophe ne ſoit
+          leur principal directe.ͬ<lb n="10"/>car ilz ont eſtime que les ſaiges ont participatiõ<lb
+            n="11"/>auecques la nature diuine et que par eulx ſe<lb n="12"/>doiuent faire les
+          ſacrifices et que len ne doit riẽs<lb n="13"/>demander aux dieux ſinon par linterceſſiõ
+            diceulx<lb n="14"/>et que en paix et guerre on doit vſer de le.ͬ ꝯseil<lb n="15"/>Bien
+          est vray que deuant ceſtuy <persName ref="#sarron">ſarron</persName> les ſa<lb n="16"
+          />mothes eſtoyent theologiens et philozophes<lb n="17"/>mais ilz nauoyent encores aucunes
+            eſcolles<lb n="18"/>publicques.</ab>
+      </div>
+      <div>
+        <head><lb n="1"/>Du iiii.ͤ roy de celtes ou francois nomme<lb n="2"/><persName ref="#dryus"
+            >dryus</persName> v.ͤ chappitre.</head>
+        <p><lb n="1"/><persName ref="#dryus">Dryus</persName> iiii.ͤ Roy de france fut homme de<lb
+            n="2"/>treſgrant et merueilleux ſauoir. <persName ref="#jules-cesar">Ceſar</persName> en
+            ſon<lb n="3"/><ref target="#bibl-jules-cesar" n="VI,13">ſix.ͤ des commentaires</ref> et
+            <persName ref="#diodore-de-sicile">diodore</persName> en ſon <ref
+            target="#bibl-diodore-de-sicile" n="V,31,2">ſix.ͤ<lb n="4"/>liure</ref> des celtes
+          diſent ilz qui ſont les francoys<lb n="5"/>vsent de diminutions dangures et sacrifices<lb
+            n="6"/>par leſquelles prediſoyent les choſes futures de<lb n="7"/>ceulx Icy parle <ref
+            target="#bibl-lucain" n="I,450-462;III,399-445"><persName ref="lucain" role="source"
+              key="Q188646" sameAs="https://www.wikidata.org/wiki/Q188646">lucan</persName></ref> et
+            <persName ref="#pline-l-ancien">pline</persName>
+          <ref target="#bibl-pline-l-ancien" n="XVI,95">en la fin du<lb n="8"/>xvi.ͤ liure</ref> de
+            <persName ref="suetone" role="source" key="Q10133"
+            sameAs="https://www.wikidata.org/wiki/Q10133">ſuetone</persName> de ceulx cy parle
+            <persName ref="#lucain">lucan</persName><lb n="9"/>et <persName ref="#pline-l-ancien"
+            >pline</persName>
+          <ref target="#bibl-suetone" n="Claud. 25">en la fin en la uie de claude cezar</ref> Ce</p>
+        <ab><pb n="8" facs="assets/facs/f_4v.jpg"/><lb n="1"/>ſont ceulx de dreux et des enuirons en
+          normẽdie</ab>
+      </div>
+      <div>
+        <head><lb n="1"/>De <persName ref="#bardus">bardus</persName> v.ͤ Roy des celtes chappitre
+          vi ͤ</head>
+        <p><lb n="1"/><persName ref="#bardus">Bardus</persName> fut treſexcellant en Inuention de
+            ꝯposer<lb n="2"/>vers et chancons de muſicque ainſi que dit <persName ref="#berose"
+            >beroze</persName><lb n="3"/>de ceſtuy vint vne ſecte nõmee la ſecte bardre que<lb
+            n="4"/>comme alaiſſe par eſcript <persName ref="#diodore-de-sicile">diodore</persName>
+          en ſon <ref target="#bibl-diodore-de-sicile" n="V,31,2">vi.ͤ liure</ref><lb n="5"/>il ya
+          diſt il en gaulle celtiques poetes inuenteurs<lb n="6"/>de toute doulceur de muſique quon
+          appelle bardes<lb n="7"/>et chantent auecques les orgres ne plus ne mains<lb n="8"/>que
+          les autres nations auecques la herpe diſans<lb n="9"/>louenges des vngs et vitupere des
+          autres et ſont de<lb n="10"/>ſi grande eſtime en guerre quilz nont pas ſi toſt<lb n="11"
+          />veu leurs ennemis quilz ſont vaincus et pource<lb n="12"/>ſauue lonneur des grecz et ne
+          leur deſplaiſe car ilz<lb n="13"/>ont eu les ſciences des francoys quilz ont reputes<lb
+            n="14"/>barbares qui ont premier trouue les ars et ſciences<lb n="15"/>que nont les
+          grecz</p>
+      </div>
+      <div>
+        <head><lb n="1"/>De <persName ref="#longhus">longho</persName> vi.ͤ Roy des celtes</head>
+        <p><lb n="1"/><persName ref="longhus">Longho</persName> fut le premier duquel ſont nommes<lb
+            n="2"/>ceulx de langres lesquelz de ce nom eſtoyent ditz<lb n="3"/>longones en terme
+          latin et maintenant lingones<lb n="4"/>comme <ref target="#bibl-ptolemee" n="II,9,9"
+            >recite <persName ref="#ptolemee">ptholomee</persName></ref> et autres triographes<lb
+            n="5"/>Ce nom ycy <persName ref="#longhus">longho</persName> vault autant adire cõe
+            prince<lb n="6"/>conſeruant et de grant prudence a garder ce quil<lb n="7"/>auoit
+          conquis</p>
+      </div>
+      <div>
+        <head><lb n="1"/>De <persName ref="bardus-ii">bardus</persName> vii ͤ roy des celtes</head>
+        <ab/>
+        <ab/>
+        <ab>
+          <pb n="9" facs="assets/facs/f_5r.jpg"/>
+        </ab>
+        <p><lb n="1"/><persName ref="#bardus-ii">Bardus</persName> le ieune et ſecond de ce nom
+          Regna apres<lb n="2"/><persName ref="#longhus">longho</persName> de luy neſt trouue choſe
+          digne de memoire</p>
+      </div>
+      <div>
+        <head><lb n="1"/>De <persName ref="lucus" role="personnage">lucus</persName> viii.ͤ Roy de
+          celtes</head>
+        <p><lb n="1"/><persName ref="#lucus">Lucus</persName> eſt celluy dont ſont nommes au pres
+            de<lb n="2"/>paris luſarche comme le teſmoigne <persName ref="#ptolemee"
+            >ptholomee</persName> en<lb n="3"/>ſa <ref target="#bibl-ptolemee" n="II,9"
+            >coſmagraphie</ref>.</p>
+      </div>
+      <div>
+        <head><lb n="1"/>De <persName ref="celtes" role="personnage">celtes</persName> ix.ͤ Roy des
+          celtes ou francois</head>
+        <p><lb n="1"/><persName ref="#celte">Celte</persName> est celuy dont eſt nomme la gaulle
+            Celtique<lb n="2"/>qui fut la premiere terre hĩtee en france ce nom<lb n="3"/>de celtes
+          leur a dure iusques a francois xxii.ͤ Roy<lb n="4"/>dont fut le pays nomme france et les
+            hommes<lb n="5"/>francois qui en portent le nom par excellance es<lb n="6"/>gaulles
+          ſubgete au roy de france en ſorte que toutes<lb n="7"/>les terres de ſon Royaume comme
+          acquitaine et la<lb n="8"/>gaulle belgicque et autres terres voismes ſont ap¬<lb n="9"
+          />pellees france et les hĩtans dicelle francois. Et le roy<lb n="10"/>de france prent ſon
+          nom de celle Region dautant<lb n="11"/>que apres le deluge fut la premiere habitee Et
+            quil<lb n="12"/>ſoit ainsi lexperience nous le monſtre a loeil et a<lb n="13"/>vnchaſcun
+          viuant de ce temps qui vouldroit ſau̾<lb n="14"/>letymologie de ce nom celtes liſe
+          viterbience cõmẽtate ͬ<lb n="15"/>de <persName ref="#berose">beroſe</persName> surce
+          paſſaige en ſon cinq.ͤ liure ſur le tex¬<lb n="16"/>te <cit>
+            <quote xml:lang="la">apud celtas celte aquo</quote>
+            <ref target="#bibl-berose" n="f. Viiir"/>
+          </cit> ⁊c̃.</p>
+      </div>
+      <div>
+        <head><lb n="1"/>De <persName ref="#galathes">galathes</persName> x.ͤ Roy de celtes</head>
+        <p><lb n="1"/><persName ref="#galathes">Galathes</persName> fut filz de <persName
+            ref="hercule-de-libye" role="personnage" key="Q122248"
+            sameAs="https://www.wikidata.org/wiki/Q122248">hercules degipte</persName> aniſi que
+          dit</p>
+        <p><pb n="10" facs="assets/facs/f_5v.jpg"/><lb n="1"/><persName ref="#berose">beroſe</persName>
+          car apres que <persName ref="#hercule-de-libye">hercules</persName> eut ſurmonte les
+            tyrãs<lb n="2"/>en eſpaigne il voulut aller en ytallye et print ſon<lb n="3"/>chemin
+          par les gaulles ou en paſſant par les gaulles<lb n="4"/>vint veoir le roy deſſuſd̶
+            <persName ref="#celte">Celtes</persName> et dune ſienne<lb n="5"/>fille nõmee <persName
+            ref="#galatee">galathea</persName> leur engendra ceſtuy <persName ref="#galathes"
+            >galathes</persName><lb n="6"/>dont vint que les celtes furent premierement nõmes<lb
+            n="7"/>galles ou gallois. Et que ainſi ſoit apres <persName ref="#berose"
+            >beroſe</persName><lb n="8"/><persName ref="#diodore-de-sicile">diodore</persName> en
+          son <ref target="#bibl-diodore-de-sicile" n="V,24">six.ͤ</ref> nous a laiſe par eſcript ce
+            qui<lb n="9"/>enſuit. Le temps paſſe y euſt ung treſnoble<lb n="10"/>prince qui regnoit
+          aux parties celtiques ou fran¬<lb n="11"/>coiſes lequel auoit vne fille exedente la
+            cõmune<lb n="12"/>nature en grandeur et beaulte et elegance de corps<lb n="13"
+          />treſexcellante en vertu force et couraige. A ceſte<lb n="14"/>cauſe depriſoit tous les
+          hommes qui la vouloyent<lb n="15"/>auoir pour femme et neſtimoit homme ſouffiſãt<lb
+            n="16"/>ne digne de lauoir en mariage. Le temps pendãt<lb n="17"/><persName
+            ref="#hercule-de-libye">hercules</persName> a ſon retour deſpaigne ou long tep̃s
+            auoit<lb n="18"/>eſte et ediffie la cite nõmee alexia apres la victoire<lb n="19"
+          />obtenue contre <persName ref="gerion" role="personnage" key="Q86805"
+            sameAs="https://www.wikidata.org/wiki/Q86805">berion</persName>. Ceſte fille du roy
+            <persName ref="#galatee">galathea</persName><lb n="20"/>voyant par admonition les
+          grandes vertus de<lb n="21"/><persName ref="#hercule-de-libye">hercules</persName> la
+          beaulte et grandeur de ſon corps fut<lb n="22"/>de luy amoureuſe et de conſentement de
+          pere et de<lb n="23"/>mere euſt la fruiction de ſon amour . Et de luy<lb n="24"/>conteupt
+          vng filz nõme <persName ref="#galathes">galathes</persName> lequel entre toꝰ<lb n="25"
+          />ceulx de ſon temps en vertuz et puiſſance de corps<lb n="26"/>eut le nom le bruit et la
+          renommee par ſes gran¬<lb n="27"/>des vertuz et puiſſance luy venu en eage dhõme<lb
+            n="28"/>et ſucceſſeur du royaume apres <persName ref="#celte">celtes</persName> pere de
+            <persName ref="#galatee">gala¬<lb n="29"/>thea</persName> sa mere par ſes geſtes et
+          vertuz conquiſt pluẜ ͬ ᷤ<lb n="30"/>terres et ſeigneuries et augmenta ſon royaume<lb
+            n="31"/>Et quant il ſe uit en gloire et puiſſance et eſtre</p>
+        <ab>
+          <pb n="11" facs="assets/facs/f_6r.jpg"/>
+        </ab>
+        <ab><lb n="1"/>bien obey de ſes ſubgetz il voulut et decreta que de<lb n="2"/>ſon nom feuſt
+          nomme tout ſon peuple Et furẽt<lb n="3"/>ditz galathes et toute la region gallicanne
+            euſt<lb n="4"/>ce nom et tout le pays. Et ſont les parolles de<lb n="5"/><persName
+            ref="#diodore-de-sicile">diodore</persName> dont il appert que du temps de <persName
+            ref="#hercule-de-libye">hercules</persName><lb n="6"/>ceſte region galicanne euſt ce nom
+          qui depuis<lb n="7"/>par ſuſtraction de leurs a eſte dicte gallia en memoi¬<lb n="8"/>re
+          de ce Roy <persName ref="#galathes">galathes</persName> filz de <persName
+            ref="#hercule-de-libye">hercules</persName>. Auecques ce<lb n="9"/>que nous auons deſſus
+          allegue comme <ref target="#bibl-solin"><persName ref="#solin">ſolinus</persName></ref>
+            qui<lb n="10"/>eſt acteur comoſgraphe de grant eſtime lequel dit<lb n="11"/>que les
+          galathes du pays daſie leſquelz eſcript <persName ref="paul-de-tarse" role="source"
+            key="Q9200" sameAs="https://www.wikidata.org/wiki/Q9200">ſainct<lb n="12"
+            />paol</persName>
+          <ref target="bibl-paul-de-tarse" n="Gal 1,1">ad galathas</ref> ont eu leur origine des
+          galles q̃<lb n="13"/>nous diſons francois. <persName ref="#hercule-de-libye"
+            >Hercules</persName> en ce meſmes teps̃<lb n="14"/>edifia en bourgongne vne cite nomme
+          en langue<lb n="15"/>latine au Iour duy alſeta qui neſt pas loing dauthũ<lb n="16"
+          />Oultre plus recite <persName ref="#diodore-de-sicile">diodore</persName> que les
+          galathes a com¬<lb n="17"/>paignes de pluſieurs autres leurs vvoiſins vindret̃<lb n="18"
+          />en grece occuper le pays daſye ou fonderent et dõne¬<lb n="19"/>rent premierement le
+          nom aux gallathes. ausquelz<lb n="20"/><persName ref="#paul-de-tarse">ſainct
+            paol</persName> a dirige et eſcript plusieurs epitres. Et<lb n="21"/>furent appellez
+          ainſi que <persName ref="#flavius-josephe">iosephe</persName> et <persName ref="solin"
+            role="source" key="Q520487" sameAs="https://www.wikidata.org/wiki/Q520487"
+            >ſolinus</persName>
+          <ref target="#bibl-solin">raconte</ref><lb n="22"/>et tesmoignent ceulx qui firent la
+          conqueſte des<lb n="23"/>grecz gallatoys sunt gallogreci. A ceste cauſe veult<lb n="24"
+          />inſerer que dautant que luſaige des lettres eſtoit<lb n="25"/>entre les galloẏs comme
+          eſt deſſuſd̶ La raison eſt<lb n="26"/>euidente a ce que dyent ceulx de meonie qͥlz
+            auoyẽt<lb n="27"/>premierement les lectres des francois. et que les<lb n="28"/>grecz
+          les eurent deulx et non pas de <persName ref="#cadmos">cadmus</persName> quilz<lb n="29"
+          />dient auoir eſte celluẏ qui premier les apporta<lb n="30"/>des phenierons aux grecz
+          comme ilz ont faulcemt̃<lb n="31"/>de leur couſtume meſcongneu. Ad ce propos auſſi</ab>
+        <ab><pb n="12" facs="assets/facs/f_6v.jpg"/><lb n="1"/>ſert ce que <persName ref="manethon"
+            role="source" key="Q174380" sameAs="https://www.wikidata.org/wiki/Q174380"
+            >manethon</persName>
+          <ref target="#bibl-manethon"> racompte</ref> que ala fin du regne<lb n="2"/>de <persName
+            ref="ilos" role="personnage" key="Q638979"
+            sameAs="https://www.wikidata.org/wiki/Q638979">ilus</persName> Roy de troye <persName
+            ref="galathes-ii" role="personnage">galathes ſecond</persName> de ce nom ſur<lb n="3"
+          />monta les ſamothes et tanydicques et fonda pluẜ ͬS<lb n="4"/>villes es gallathes par
+          quoy nous eſt euidente pro¬<lb n="5"/>bation que la puiſſance des galles perſeuera et
+            con¬<lb n="6"/>tinua longuement en aſẏe. Et pour ceſte cause appa¬<lb n="7"/>roiſt que
+          les ars ſciences et lettres ont eu origine<lb n="8"/>des francois ce que les grecz ſe ſont
+            faulcement<lb n="9"/>atribues ce loz ce que iamais ne fut trouue en librai¬<lb n="10"
+          />rie ne ſuffisant acteur auſſi que leur reprouche <persName ref="#flavius-josephe"
+              >ioze¬<lb n="11"/>phus</persName> en ſon <ref
+            target="#bibl-flavius-josephe-contre-apion">liure contre la grammaire appion</ref>.
+            Et<lb n="12"/>pour faire fin en ceſte matiere diodore <choice>
+            <sic>dificille</sic>
+            <corr>desicille</corr>
+          </choice> dit po ͬ<lb n="13"/>la verite que les rommains appellent les gallathes<lb n="14"
+          />ceulx que les autres nomment les celtes qui ſont les<lb n="15"/>francors. ainsi appart
+          comie les francois quilz<lb n="16"/>furent premierement nõmez ſamothes de leur p̾mier<lb
+            n="17"/>Roy muerent leur nom par pluſieurs foys. Car de<lb n="18"/>ſamothes apres furent
+          appelles celtes de leur Roy<lb n="19"/><persName ref="#celte">celthe</persName>. Apres
+          furent appelles ou nõmes galathes<lb n="20"/>et leur regne augmente de gaulle belgicque
+            par<lb n="21"/>vng nomme <persName ref="belgius" role="personnage">belgius</persName>.
+          Et comme nous verrons<lb n="22"/>furent appelles galles belgicques les rommains le ͬ<lb
+            n="23"/>ont touſiours donne ce nõ galli qui ſont galles<lb n="24"/>Et eſt celuy qui
+          entre les hyſtoriens eſt plus vſite<lb n="25"/>finablement comme nous verrons a la fin de
+            ce<lb n="26"/>liure furent appelles francois qui eſt le terme plꝰ<lb n="27"/>cõmun de
+          pardeca en nr̃e langue vulgaire. Par<lb n="28"/>ainſi il appart que <persName
+            ref="#galathes">galathes</persName> filz de <persName ref="#hercule-de-libye"
+            >hercules</persName> donna<lb n="29"/>ce nom gaulles au pays et aux hommes de france<lb
+            n="30"/>Le quel galathes du temps de <persName ref="altades" role="personnage"
+            >altades</persName>xii.ͤ Roẏ<lb n="31"/>de babilloyne.</ab>
+        <ab>
+          <pb n="13" facs="assets/facs/f_7r.jpg"/>
+        </ab>
+      </div>
+      <div>
+        <head><lb n="1"/>De <persName ref="harbon" role="personnage">harbon</persName> xi.ͤ Roẏ de
+          celtes</head>
+        <p><lb n="1"/><persName ref="harbon">Harbon</persName> en muant .h. en .n. eſt narbon et de
+            luẏ<lb n="2"/>fuc dit le paẏs de narbonne il eſtoit filz de <persName ref="#galathes"
+            >galathes</persName><lb n="3"/>de ceſte galle de narbonne par le<persName
+            ref="#pline-l-ancien">pline</persName> en ſon <ref target="#bibl-pline-l-ancien"
+            n="III,31">iii ͤ<lb n="4"/>liure de liſtoire naturelle</ref>. La prouince dit que de<lb
+            n="5"/>narbonne eſt vne partie des gaulles et eſt au de<lb n="6"/>ſoubz de lamer
+          deſpaigne et ſe nommoit galia<lb n="7"/>broceata diuiſee de itallie par la riuiere
+            nommee<lb n="8"/>en latin varus il ya homme deſperit fertilite de t̾re<lb n="9"
+          />multitude de richeſſes par quoy ne ſcay prouince<lb n="10"/>digne deſtre preferee au
+          pays dytalie ſinõ ceſte cy</p>
+      </div>
+      <div>
+        <head><lb n="1"/>De <persName ref="lugdus" role="personnage">lugdus</persName> xii.ͤ Roy de
+          celtes.</head>
+        <p><lb n="1"/><persName ref="lugdus">Lugdus</persName> eſt celluy dont la prouince prent
+            ſon<lb n="2"/>nom comme recite <persName ref="#berose">beroſe</persName> et ainſi q̃ le
+          nõ laccuſe<lb n="3"/>dit maiſtre <persName ref="annius-de-viterbe" role="source"
+            key="Q567224" sameAs="https://www.wikidata.org/wiki/Q567224">iehan de viterbe</persName>
+          cõmentate.ͬ dud̶ <persName ref="#berose">beroſe</persName><lb n="4"/>ceſt celuy dont eſt
+          nõme lugdiniũ qui eſt lyon en<lb n="5"/>la gaulle lugdunẽse ou lionnoiſe on appelle de
+            ceſtuy<lb n="6"/><persName ref="#lugdus">lugdus</persName> les hommes ludouici et nõ
+          obstãt g. demeure<lb n="7"/>ludouici q̃ nous diſons en francoys loys</p>
+      </div>
+      <div>
+        <head><lb n="1"/>De <persName ref="#belgius">belgius</persName> xiii.ͤ Roy de celtes.</head>
+        <p><lb n="1"/><persName ref="#belgius">Belgius</persName> comme dit <persName ref="#berose"
+            >beroſe</persName> est celuy dont eſt dicte<lb n="2"/>la gaulle belgieque qui commance
+          depuẏs le paẏs<lb n="3"/>ou paſſe la riuiere de cene et marne du coſte de sep<lb n="4"
+          />tentrion iuſques au fleuue de rouen et vne partie<lb n="5"/>vers orient du coſte
+          doccident finiſt a la mer octeane<lb n="6"/>qui eſt la mer de bretaigne.</p>
+      </div>
+      <div>
+        <pb n="14" facs="assets/facs/f_7v.jpg"/>
+        <head><lb n="1"/>Du Roy <persName ref="allobrox" role="personnage">allobrox</persName>
+          xiiii.ͤ Roy de celtes ou francois</head>
+        <p><lb n="1"/><persName ref="#allobrox">Allobrox</persName> ainſi que dit <persName
+            ref="#annius-de-viterbe">viterbrouce</persName>
+          <cit>
+            <quote>quaſi alle¬<lb n="2"/>droys qui eſt adire meridionnale mixtion car<lb n="3"/>drox
+              ou daros eſt le uent de mydy que les hebrai¬<lb n="4"/>ques dyent daros et hallo eſt
+              adire mixtion</quote>
+            <ref target="#bibl-annius-de-viterbe" n="f. Yiiir"/>
+          </cit> a<lb n="5"/>ce conſentent <persName ref="jerome-de-stridon" role="source"
+            key="Q44248" sameAs="https://www.wikidata.org/wiki/Q44248">ſainct iheroſme</persName> et
+          les talmudiſtes<lb n="6"/>et de ces deux dictions vient allodarox ou allo¬<lb n="7"/>drox
+          qui depuis a eſte dit <persName ref="#allobrox">allobrox</persName> qui eſt ĩter¬<lb
+            n="8"/>prete cõmixtion ſont ditz les allobroges qui ont<lb n="9"/>pluẜ ͬ ᷤcites
+          treſanciennes comme dyent <persName ref="#ptolemee">ptholome</persName><lb n="10"/>et
+          autres coſmographes entre leſquelz est viẽne<lb n="11"/>geneue et auignon meridyonale il
+          neſt adou¬<lb n="12"/>ter q̃ de ce roy allobrox.</p>
+      </div>
+      <div>
+        <head><lb n="1"/>Translateur</head>
+        <p><lb n="1"/>Icy finiſt <persName ref="#berose">beroſe</persName> qui a eſcript ceulx qͥ
+            regnerent<lb n="2"/>en diu̾ſes parties de la terre apres le deluge iuſqs̃<lb n="3"/>a
+          ſon temps</p>
+        <p><lb n="1"/><persName ref="#manethon">Maneton</persName> cõmance ou <persName
+            ref="#berose">beroſe</persName> afiny et <ref target="#bibl-manethon">ꝯtient<lb n="2"
+            />iuſques a ſon temps duquel regna <persName ref="#francus">francus</persName></ref>
+            dõt<lb n="3"/>ſont ditz les francois cõe len verra cy apres.</p>
+      </div>
+      <div>
+        <head><lb n="1"/>Du xv.ͤ Roy des celtes ou francois nõe <persName ref="romus"
+            role="personnage">Romus</persName></head>
+        <p><lb n="1"/><persName ref="#romus">Romus</persName> eſt celluy dit <persName
+            ref="#manethon">manethon</persName> dont ſont ditz<lb n="2"/>romandi <persName
+            ref="#ptolemee">ptholomee</persName> dit q̃ en sa gaulle belgicq̃<lb n="3"/>ya les
+          romandiſſes ſur le fleuue de roſne au de<lb n="4"/>ſoubz de vienne romonũ et roma qui
+          depuis a<lb n="5"/>eſte nõmee ꝑ interpretaᵒ.ᷠ ualence.</p>
+        <ab/>
+        <ab>
+          <pb n="15" facs="assets/facs/f_8r.jpg"/>
+        </ab>
+      </div>
+      <div>
+        <head><lb n="1"/>Du xvi.ͤ Roy de celtes ou francois nõe <persName ref="paris"
+            role="personnage">paris</persName></head>
+        <p><lb n="1"/><persName ref="#paris">Paris</persName> fut celluy dont eſt dicte la cite de
+            paris<lb n="2"/>qui par auant auoit nom lutocia qui de nr̃ẽ<lb n="3"/>temps eſt
+          treſſouueraine vniu̾se du mõde en<lb n="4"/>la quelle fut docteur regent <persName
+            ref="thomas-d-aquin" role="personnage" key="Q9438"
+            sameAs="https://www.wikidata.org/wiki/Q9438">ſainct thomas daquĩ</persName><lb n="5"
+            /><persName ref="#ptolemee">ptholomee</persName>
+          <ref target="#bibl-ptolemee" n="II,9"> en ſa geographie</ref> et aut̾s pluẜ.ͬ ᷤ</p>
+      </div>
+      <div>
+        <head><lb n="1"/>du xvii.ͤ Roy de celtes nõe <persName ref="lemannus" role="personnage">le
+            mãnus</persName>.</head>
+        <p><lb n="1"/><persName ref="#lemannus">Le mãnus</persName> fut celuy dont sont ditz le
+            main<lb n="2"/>dont eſt le lac que nous appellõs Luſanne</p>
+      </div>
+      <div>
+        <head><lb n="1"/>du xviii.ͤ Roy de frãce nomme <persName ref="olbius" role="personnage"
+            >olbius</persName></head>
+        <p><lb n="1"/><persName ref="olbius">Olbius</persName> dit <persName ref="#manethon"
+            >manetõ</persName> Regna apres le Roy <persName ref="#lemannus">mãmus</persName><lb
+            n="2"/>et de luy neſt trouue choſe digne de memoire.</p>
+      </div>
+      <div>
+        <head><lb n="1"/>du xix.ͤ Roy de celtes ou frãcois nõe <persName ref="#galathes-ii"
+              >galathas<lb n="2"/>ſecond</persName> de ce nom.</head>
+        <p><lb n="1"/><persName ref="#galathes-ii">Gallatas deux.ͤ</persName> de ce nom fut celluy
+          qui ſurmõ<lb n="2"/>ta les ſamothes en aſye et edifia pluſieurs villes<lb n="3"/>en
+          france en lhonneur de ſon pere <persName ref="#olbius">olbius</persName> et es<lb n="4"
+          />autres regions par luẏ ſubjuguees comme en<lb n="5"/>ſamothe aſie et Cilicie ainſi que
+            <persName ref="#ptolemee">ptholome</persName> et<lb n="6"/>autres geographes nõment
+          pluſieurs cites<lb n="7"/>olbiances de ce nom <persName ref="#olbius">olbius</persName>.
+          ⁊c̃.</p>
+      </div>
+    </body>
+  </text>
+  <standOff>
+    <listRelation>
+      <!-- Relations parentales bibliques -->
+      <relation name="parent" active="#adam" passive="#seth"/>
+      <relation name="parent" active="#seth" passive="#enosh"/>
+      <relation name="parent" active="#enosh" passive="#kenan"/>
+      <relation name="parent" active="#kenan" passive="#mahalalel"/>
+      <relation name="parent" active="#mahalalel" passive="#yared"/>
+      <relation name="parent" active="#yared" passive="#henoch"/>
+      <relation name="parent" active="#henoch" passive="#mathusalem"/>
+      <relation name="parent" active="#mathusalem" passive="#lemek"/>
+      <relation name="parent" active="#lemek" passive="#noe"/>
+      <relation name="married" active="#noe" passive="#tytea"/>
+      <relation name="parent" active="#noe" passive="#sem"/>
+      <relation name="parent" active="#noe" passive="#japhet"/>
+      <relation name="parent" active="#noe" passive="#cham"/>
+      <relation name="parent" active="#noe" passive="#pandora"/>
+      <relation name="parent" active="#noe" passive="#noela"/>
+      <relation name="parent" active="#noe" passive="#noegla"/>
+      <relation name="parent" active="#japhet" passive="#comerus-gallus"/>
+      <relation name="parent" active="#japhet" passive="#medus"/>
+      <relation name="parent" active="#japhet" passive="#magog"/>
+      <relation name="parent" active="#japhet" passive="#samothes"/>
+      <relation name="parent" active="#japhet" passive="#tubal"/>
+      <relation name="parent" active="#japhet" passive="#iubal"/>
+      <relation name="parent" active="#japhet" passive="#tiras"/>
+      <relation name="parent" active="#japhet" passive="#ion"/>
+
+      <!-- Relations parentales et successions celtiques -->
+      <relation name="parent" active="#samothes" passive="#magus"/>
+      <relation name="parent" active="#samothes" passive="#sarron"/>
+      <relation name="parent" active="#samothes" passive="#namnes"/>
+      <relation name="parent" active="#samothes" passive="#dryus"/>
+      <relation name="parent" active="#samothes" passive="#bardus"/>
+      <relation name="parent" active="#samothes" passive="#longhus"/>
+      <relation name="parent" active="#samothes" passive="#galatee"/>
+      <relation name="parent" active="#hercule-de-libye" passive="#galathes"/>
+      <relation name="married" active="#hercule-de-libye" passive="#galatee"/>
+      <relation name="parent" active="#galathes" passive="#harbon"/>
+      <relation name="parent" active="#harbon" passive="#lugdus"/>
+      <relation name="parent" active="#lugdus" passive="#belgius"/>
+      <relation name="parent" active="#belgius" passive="#allobrox"/>
+      <relation name="parent" active="#allobrox" passive="#romus"/>
+      <relation name="parent" active="#romus" passive="#paris"/>
+      <relation name="parent" active="#paris" passive="#lemannus"/>
+      <relation name="parent" active="#lemannus" passive="#olbius"/>
+      <relation name="parent" active="#olbius" passive="#galathes-ii"/>
+
+      <relation name="succession" active="#magus" passive="#sarron"/>
+      <relation name="succession" active="#sarron" passive="#dryus"/>
+      <relation name="succession" active="#dryus" passive="#bardus"/>
+      <relation name="succession" active="#bardus" passive="#longhus"/>
+      <relation name="succession" active="#longhus" passive="#bardus-ii"/>
+      <relation name="succession" active="#bardus-ii" passive="#lucus"/>
+      <relation name="succession" active="#lucus" passive="#celtes"/>
+      <relation name="succession" active="#celtes" passive="#galathes"/>
+      <relation name="succession" active="#galathes" passive="#harbon"/>
+      <relation name="succession" active="#harbon" passive="#lugdus"/>
+      <relation name="succession" active="#lugdus" passive="#belgius"/>
+      <relation name="succession" active="#belgius" passive="#allobrox"/>
+      <relation name="succession" active="#allobrox" passive="#romus"/>
+      <relation name="succession" active="#romus" passive="#paris"/>
+      <relation name="succession" active="#paris" passive="#lemannus"/>
+      <relation name="succession" active="#lemannus" passive="#olbius"/>
+      <relation name="succession" active="#olbius" passive="#galathes-ii"/>
+    </listRelation>
+  </standOff>
+</TEI>

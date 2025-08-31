@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# LaTeX build 
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+latex/*.pdf
+
+# Temporanei vari
+~$*
+*.tmp

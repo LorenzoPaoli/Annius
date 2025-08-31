@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recherche — MS-5219</title>
+  <link href="https://fonts.googleapis.com/css2?family=Linden+Hill:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="container">
+ <nav class="top-menu" aria-label="Navigation principale">
+  <ul>
+    <li><a href="a-propos.html">À&nbsp;propos</a></li>
+    <li><a href="transcription_ms_5219_d.html">Édition&nbsp;graphématique</a></li>
+<li><a href="transcription_ms_5219_sd.html">Édition&nbsp;semi-diplomatique</a></li>
+    <li><a href="auctoritates.html">Auctoritates</a></li>
+<li><a href="genealogie.html">Généalogie</a></li>
+<li class="nav-tools">
+  <button id="theme-toggle" aria-label="Mode sombre/clair">🌓</button>
+  <button id="font-minus" aria-label="Réduire la taille du texte">A−</button>
+  <button id="font-plus" aria-label="Augmenter la taille du texte">A+</button>
+</li>
+<li class="nav-search">
+   <form role="search" action="search.html" method="get" id="site-search">
+    <label for="search" class="sr-only">Rechercher</label>
+    <input id="search" name="q" type="search" placeholder="Rechercher…"
+           autocomplete="off"
+           aria-controls="search-suggest" aria-expanded="false" aria-haspopup="listbox">
+    <div id="search-suggest" class="suggest-box" role="listbox" aria-label="Suggestions" hidden></div>
+  </form>
+</li>
+
+
+  </ul>
+</nav>
+
+
+  <main id="main" class="prose">
+    <h1>Résultats de recherche</h1>
+    <p id="search-summary" class="lead"></p>
+    <ol id="results" class="results-list"></ol>
+  </main>
+
+  <footer class="center"><p class="note">© 2025 Université de Genève</p></footer>
+</div>
+<!-- Overlay lightbox -->
+<div class="lb" aria-hidden="true">
+  <img alt="">
+  <button class="x" aria-label="Fermer">×</button>
+</div>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/search.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/assets/js/service-worker.js');
+  }
+</script>
+
+</body>
+</html>
+
+

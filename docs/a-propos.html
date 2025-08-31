@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>À propos — MS-5219</title>
+  <link href="https://fonts.googleapis.com/css2?family=Linden+Hill:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+
+  <div class="container">
+    <nav class="top-menu" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index_ms_5219.html">Accueil</a></li>
+        <li><a href="transcription_ms_5219_d.html">Édition graphématique</a></li>
+        <li><a href="transcription_ms_5219_sd.html">Édition semi-diplomatique</a></li>
+        <li><a href="auctoritates.html">Auctoritates</a></li>
+<li><a href="genealogie.html">Généalogie</a></li>
+
+  <li class="nav-tools">
+  <button id="theme-toggle" aria-label="Mode sombre/clair">🌓</button>
+  <button id="font-minus" aria-label="Réduire la taille du texte">A−</button>
+  <button id="font-plus" aria-label="Augmenter la taille du texte">A+</button>
+</li>
+<li class="nav-search">
+  <form role="search" action="search.html" method="get" id="site-search">
+    <label for="search" class="sr-only">Rechercher</label>
+    <input id="search" name="q" type="search" placeholder="Rechercher…"
+           autocomplete="off"
+           aria-controls="search-suggest" aria-expanded="false" aria-haspopup="listbox">
+    <div id="search-suggest" class="suggest-box" role="listbox" aria-label="Suggestions" hidden></div>
+  </form>
+</li>
+
+
+
+      </ul>
+    </nav>
+
+    <main class="prose" id="main">
+      <h1>À propos / Méthode éditoriale</h1>
+
+      <section id="about">
+        <h2>À&nbsp;propos</h2>
+
+        <h3>Sur l'édition numérique du ms-5219</h3>
+        <p><strong>Titre :</strong> Traduction des antiquités gauloises d’après Annius de Viterbe (v. 1510)</p>
+        <p><strong>Auteur :</strong> Robert Frescher</p>
+        <p><strong>Éditeur scientifique :</strong> Lorenzo Paoli</p>
+        <p><strong>Institution :</strong> Université de Genève</p>
+        <p><strong>Date d’édition :</strong> 26 mai 2025</p>
+
+        <p><strong>Licence :</strong> 
+          <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC-BY 4.0</a>
+        </p>
+
+        <p><strong>Accès numérique :</strong> Le manuscrit original est entièrement consultable en ligne sur 
+          <a href="https://gallica.bnf.fr/ark:/12148/btv1b55005891m" target="_blank" rel="noopener noreferrer">Gallica</a>
+        </p>
+
+        <p><strong>Accès au manuscrit encodé (XML-TEI) :</strong> 
+          <a href="ms_5219_d.xml" target="_blank">Voir le fichier XML encodé (TEI)</a>
+        </p>
+
+        <p><strong>Les données OCR :</strong> Les données OCR SegmOnto de cette édition sont disponibles sur GitHub&nbsp; 
+          <a href="https://github.com/LorenzoPaoli/Annius" target="_blank" rel="noopener noreferrer">
+            github.com/LorenzoPaoli/Annius
+          </a>
+        </p>
+
+        <p><strong>Pour citer cette édition :</strong> Paoli, Lorenzo (éd.), 
+          <i>BnF. Bibliothèque de l’Arsenal. MS-5219 réserve. Édition numérique des folios 1r–8r</i>, Université de Genève, 2025.
+        </p>
+
+        <p><i>Cette édition a été réalisée dans le cadre du Certificat en Humanités Numériques de l’Université de Genève.</i></p>
+      </section>
+
+      <!-- (facoltativo) qui puoi aggiungere la tabella #genealogie se la sposti dall’index -->
+    </main>
+
+    <footer class="center"><p class="note">© 2025 Université de Genève | Réalisation : Lorenzo Paoli</p></footer>
+  </div>
+<!-- Overlay lightbox -->
+<div class="lb" aria-hidden="true">
+  <img alt="">
+  <button class="x" aria-label="Fermer">×</button>
+</div>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/search.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/assets/js/service-worker.js');
+  }
+</script>
+
+</body>
+</html>
+

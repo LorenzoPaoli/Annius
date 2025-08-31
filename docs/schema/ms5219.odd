@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:tei="http://www.tei-c.org/ns/1.0"
+     xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ODD for BnF Arsenal MS-5219 réserve, fol. 1r–8r</title>
+        <author>Automatically generated</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>ODD generated for use in Roma/TEI to describe the elements and attributes used in the TEI-XML edition of manuscript MS-5219.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Based on the provided TEI-XML file.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+
+  <schemaSpec ident="ms5219_spec" docLang="en">
+    <moduleRef key="tei"/>
+    <moduleRef key="msdescription"/>
+    <moduleRef key="namesdates"/>
+    <moduleRef key="linking"/>
+    <moduleRef key="textstructure"/>
+
+    <elementSpec ident="TEI" mode="change"/>
+    <elementSpec ident="teiHeader" mode="change"/>
+    <elementSpec ident="msDesc" mode="change"/>
+    <elementSpec ident="listBibl" mode="change"/>
+    <elementSpec ident="listPerson" mode="change"/>
+    <elementSpec ident="pb" mode="change"/>
+    <elementSpec ident="lb" mode="change"/>
+    <elementSpec ident="persName" mode="change"/>
+    <elementSpec ident="ref" mode="change"/>
+    <elementSpec ident="cit" mode="change"/>
+    <elementSpec ident="note" mode="change"/>
+
+    <classSpec ident="ms5219.textual" type="model" mode="add">
+      <memberSpec key="div"/>
+      <memberSpec key="p"/>
+      <memberSpec key="ab"/>
+      <memberSpec key="head"/>
+    </classSpec>
+
+    <classSpec ident="ms5219.references" type="model" mode="add">
+      <memberSpec key="ref"/>
+      <memberSpec key="persName"/>
+    </classSpec>
+
+  </schemaSpec>
+</TEI>

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "BnF. Bibliothèque de l'Arsenal, MS-5219 réserve — Édition numérique"
+authors:
+  - family-names: Paoli
+    given-names: Lorenzo
+date-released: 2025-05-26
+doi: ""
+url: "https://github.com/<user>/<repo>"
+license: "CC-BY-4.0"
+preferred-citation:
+  type: web
+  title: "Édition numérique du MS-5219 réserve (ff. 1r–8r)"
+  authors:
+    - family-names: Paoli
+      given-names: Lorenzo
+  year: 2025
