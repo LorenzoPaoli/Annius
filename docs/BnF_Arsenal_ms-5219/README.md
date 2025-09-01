@@ -34,10 +34,6 @@ The site’s content is **in French**; this README is in English for wider acces
 │  ├─ pdf/
 │  └─ search-index.json
 │
-├─ DATA_OCR/
-│  ├─ *.png
-│  └─ *.xml
-│
 ├─ xml/
 │  ├─ ms_5219_d.xml
 │  └─ ms_5219_sd.xml
@@ -50,8 +46,11 @@ The site’s content is **in French**; this README is in English for wider acces
 │  ├─ ms_5219_d.tex
 │  └─ ms_5219_sd.tex
 │
-├─ data/
-│  └─ list_person.csv
+data/
+├─ OCR/
+│  ├─ *.png
+│  └─ *.xml
+└─ list_person.csv
 │
 ├─ schema/
 │  └─ ms5219.odd
