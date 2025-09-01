@@ -9,9 +9,10 @@ The site’s content is **in French**; this README is in English for wider acces
 - **Manuscript (full digitization):** available on Gallica (BnF)  
 - **Scope:** graphematic and semi-diplomatic transcriptions (HTML and PDF), contextual pages (*À propos*, *Auctoritates*, *Généalogie*), images, OCR outputs, and a lightweight client-side search.
 
----
 
 ## Folder structure (current)
+
+```
 
 /
 ├─ index_ms_5219.html
@@ -67,7 +68,7 @@ The site’s content is **in French**; this README is in English for wider acces
 ├─ assets/citation.cff
 └─ README.md
 
----
+```
 
 ## What’s on the site
 
