@@ -95,7 +95,7 @@ function renderResults() {
     return { ...d, snippet };
   });
 
-  summary.textContent = `${hits.length} risultato${hits.length !== 1 ? 'i' : ''} per « ${q} »`;
+  summary.textContent = `${hits.length} résultat${hits.length !== 1 ? 's' : ''} pour « ${q} »`;
   list.innerHTML = '';
   hits.forEach(d => {
     const li = document.createElement('li');
