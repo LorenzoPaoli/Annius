@@ -43,7 +43,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title><xsl:value-of select="//tei:titleStmt/tei:title"/></title>
-       <link href="https://fonts.googleapis.com/css2?family=Linden+Hill:ital@0;1&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Linden+Hill:ital@0;1&amp;display=swap" rel="stylesheet"/>
         <link rel="stylesheet" href="assets/css/style.css"/>
       </head>
       <body id="top">
@@ -55,8 +55,6 @@
             <ul>
               <li><a href="index_ms_5219.html">Accueil</a></li>
               <li><a href="a-propos.html">À propos</a></li>
-              <li><a href="auctoritates.html">Auctoritates</a></li>
-              <li><a href="genealogie.html">Généalogie</a></li>
 
               <!-- Switch variante -->
               <xsl:choose>
@@ -68,6 +66,9 @@
                 </xsl:otherwise>
               </xsl:choose>
 
+              <li><a href="auctoritates.html">Auctoritates</a></li>
+              <li><a href="genealogie.html">Généalogie</a></li>
+
               <!-- Strumenti (tema / A±) -->
               <li class="nav-tools">
                 <button id="theme-toggle" aria-label="Mode sombre/clair">🌓</button>
@@ -77,34 +78,33 @@
 
               <!-- Ricerca site-wide con suggerimenti -->
               <li class="nav-search">
-  <form role="search" action="search.html" method="get" id="site-search">
-    <label for="search" class="sr-only">Rechercher</label>
-    <!-- disattivo l’highlight globale: data-highlight="0" -->
-    <input id="search" name="q" type="search" placeholder="Rechercher…"
-           autocomplete="off"
-           data-highlight="0"
-           aria-controls="search-suggest"
-           aria-expanded="false"
-           aria-haspopup="listbox"/>
-    <!-- il popup dei suggerimenti parte nascosto -->
-    <div id="search-suggest"
-     class="suggest-box"
-     role="listbox"
-     aria-label="Suggestions"
-     hidden="hidden"></div>
-
-  </form>
-</li>
-
+                <form role="search" action="search.html" method="get" id="site-search">
+                  <label for="search" class="sr-only">Rechercher</label>
+                  <!-- disattivo l’highlight globale: data-highlight="0" -->
+                  <input id="search" name="q" type="search" placeholder="Rechercher…"
+                         autocomplete="off"
+                         data-highlight="0"
+                         aria-controls="search-suggest"
+                         aria-expanded="false"
+                         aria-haspopup="listbox"/>
+                  <!-- il popup dei suggerimenti parte nascosto -->
+                  <div id="search-suggest"
+                       class="suggest-box"
+                       role="listbox"
+                       aria-label="Suggestions"
+                       hidden="hidden"></div>
+                </form>
+              </li>
             </ul>
           </nav>
 
           <main id="main" class="edition">
             <h1><xsl:value-of select="//tei:titleStmt/tei:title"/></h1>
 
-            <!-- Blocco download (resta come nella tua versione) -->
+            <!-- Blocco download (PDF + XML-TEI) -->
             <nav class="download-nav" aria-label="Téléchargement">
               <ul>
+                <!-- 1) Download PDF -->
                 <li>
                   <xsl:choose>
                     <xsl:when test="$variant = 'd'">
@@ -120,6 +120,27 @@
                       </a>
                     </xsl:otherwise>
                   </xsl:choose>
+                </li>
+
+                <!-- 2) Download XML-TEI -->
+                <li>
+                  <xsl:variable name="xmlFile">
+                    <xsl:choose>
+                      <xsl:when test="$variant = 'd'">xml/ms_5219_d.xml</xsl:when>
+                      <xsl:otherwise>xml/ms_5219_sd.xml</xsl:otherwise>
+                    </xsl:choose>
+                  </xsl:variable>
+
+                  <xsl:variable name="xmlDownloadName">
+                    <xsl:choose>
+                      <xsl:when test="$variant = 'd'">ms_5219_d.xml</xsl:when>
+                      <xsl:otherwise>ms_5219_sd.xml</xsl:otherwise>
+                    </xsl:choose>
+                  </xsl:variable>
+
+                  <a href="{$xmlFile}" download="{$xmlDownloadName}">
+                    Télécharger l’édition XML-TEI
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -187,14 +208,19 @@ document.addEventListener('DOMContentLoaded', () => {
           <button class="x" aria-label="Fermer">×</button>
         </div>
 
-        <!-- Script finali (no-modules) -->
+        <!-- Script finali -->
+        <script src="assets/js/main.js"></script>
         <script src="assets/js/search.js"></script>
-<script src="assets/js/main.js"></script>
-<script><![CDATA[
+        <script><![CDATA[
+  // Registrazione SW robusta per GitHub Pages (project site)
   if ('serviceWorker' in navigator && window.isSecureContext) {
-    navigator.serviceWorker.register('/assets/js/service-worker.js').catch(()=>{});
+    try {
+      const base = location.pathname.replace(/[^/]*$/, ''); // cartella della pagina
+      const swUrl = base + 'assets/js/service-worker.js';
+      navigator.serviceWorker.register(swUrl);
+    } catch(e) { /* no-op */ }
   }
-]]></script>
+        ]]></script>
 
       </body>
     </html>

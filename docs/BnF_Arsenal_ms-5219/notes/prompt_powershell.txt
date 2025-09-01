@@ -1,4 +1,3 @@
-cd "C:\humanites_numeriques\memoire\projet_hn_lorenzo_paoli"
 
 .\scripts\transform_tei2html.ps1
 
