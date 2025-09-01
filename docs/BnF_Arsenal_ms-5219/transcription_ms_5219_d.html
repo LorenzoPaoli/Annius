@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr" xmlns:tei="http://www.tei-c.org/ns/1.0">
   <head>
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -7,26 +8,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Linden+Hill:ital@0;1&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
-  <body id="top"><a class="skip" href="#main">Aller au contenu</a><div class="container"><nav class="top-menu" aria-label="Navigation principale"><ul>
-          <li><a href="index_ms_5219.html">Accueil</a></li>
-          <li><a href="a-propos.html">À propos</a></li>
-          <li><a href="transcription_ms_5219_d.html" class="active">Édition graphématique</a></li>
-          <li><a href="transcription_ms_5219_sd.html">Édition semi-diplomatique</a></li>
-          <li><a href="auctoritates.html">Auctoritates</a></li>
-          <li><a href="genealogie.html">Généalogie</a></li>
-          <li class="nav-tools"><button id="theme-toggle" aria-label="Mode sombre/clair">🌓</button><button id="font-minus" aria-label="Réduire la taille du texte">A−</button><button id="font-plus" aria-label="Augmenter la taille du texte">A+</button></li>
-          <li class="nav-search">
-            <form role="search" action="search.html" method="get" id="site-search"><label for="search" class="sr-only">Rechercher</label><input id="search" name="q" type="search" placeholder="Rechercher…" autocomplete="off" data-highlight="0" aria-controls="search-suggest" aria-expanded="false" aria-haspopup="listbox"><div id="search-suggest" class="suggest-box" role="listbox" aria-label="Suggestions" hidden="hidden"></div>
-            </form>
-          </li>
-        </ul></nav><main id="main" class="edition"><h1>BnF. Bibliothèque de l'Arsenal, MS-5219 réserve, fol. 1r–8r</h1><nav class="download-nav" aria-label="Téléchargement"><ul>
-            <li><a href="assets/pdf/BnF_ms_5219_graphematique_Lorenzo_Paoli.pdf" download="BnF_ms_5219_graphematique_Lorenzo_Paoli.pdf">
-                        Télécharger le PDF de l'édition graphématique
-                      </a></li>
-            <li><a href="xml/ms_5219_d.xml" download="ms_5219_d.xml">
-                    Télécharger l’édition XML-TEI
-                  </a></li>
-          </ul></nav><div class="edition-layout"><aside class="folio-sidebar" aria-label="Navigation des folios"><ul>
+  <body id="top">
+    <a class="skip" href="#main">Aller au contenu</a>
+
+    <!-- NAV spostato fuori dal container -->
+    <nav class="top-menu" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index_ms_5219.html">Accueil</a></li>
+        <li><a href="a-propos.html">À&nbsp;propos</a></li>
+        <li><a href="transcription_ms_5219_d.html" class="active">Édition&nbsp;graphématique</a></li>
+        <li><a href="transcription_ms_5219_sd.html">Édition&nbsp;semi-diplomatique</a></li>
+        <li><a href="auctoritates.html">Auctoritates</a></li>
+        <li><a href="genealogie.html">Généalogie</a></li>
+        <li class="nav-tools">
+          <button id="theme-toggle" aria-label="Mode sombre/clair">🌓</button>
+          <button id="font-minus" aria-label="Réduire la taille du texte">A−</button>
+          <button id="font-plus" aria-label="Augmenter la taille du texte">A+</button>
+        </li>
+        <li class="nav-search">
+          <form role="search" action="search.html" method="get" id="site-search">
+            <label for="search" class="sr-only">Rechercher</label>
+            <input id="search" name="q" type="search" placeholder="Rechercher…" autocomplete="off" data-highlight="0"
+                   aria-controls="search-suggest" aria-expanded="false" aria-haspopup="listbox">
+            <div id="search-suggest" class="suggest-box" role="listbox" aria-label="Suggestions" hidden="hidden"></div>
+          </form>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Contenuto nel container -->
+    <div class="container">
+      <main id="main" class="edition">
+        <h1>BnF. Bibliothèque de l'Arsenal, MS-5219 réserve, fol. 1r–8r</h1>
+
+        <nav class="download-nav" aria-label="Téléchargement">
+          <ul>
+            <li>
+              <a href="assets/pdf/BnF_ms_5219_graphematique_Lorenzo_Paoli.pdf" download="BnF_ms_5219_graphematique_Lorenzo_Paoli.pdf">
+                Télécharger le PDF de l'édition graphématique
+              </a>
+            </li>
+            <li>
+              <a href="xml/ms_5219_d.xml" download="ms_5219_d.xml">
+                Télécharger l’édition XML-TEI
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="edition-layout">
+          <aside class="folio-sidebar" aria-label="Navigation des folios">
+            <ul>
               <li><a href="#f1r">f. 1r</a></li>
               <li><a href="#f1v">f. 1v</a></li>
               <li><a href="#f2r">f. 2r</a></li>
@@ -42,10 +74,21 @@
               <li><a href="#f7r">f. 7r</a></li>
               <li><a href="#f7v">f. 7v</a></li>
               <li><a href="#f8r">f. 8r</a></li>
-            </ul></aside><article><div>
-              <p id="f1r-p1"><figure class="facsimile" id="f1r"><img src="assets/facs/f_1r.jpg" alt="Fac-similé f. 1r" loading="lazy" decoding="async"><figcaption>f. 1r</figcaption></figure><span id="f1r-l1" class="lb"></span><br>Dela Bibliothẽ. de Charles Adrien Picard
-          1742</p>
+            </ul>
+          </aside>
+
+          <article>
+            <div>
+              <p id="f1r-p1">
+                <figure class="facsimile" id="f1r">
+                  <img src="assets/facs/f_1r.jpg" alt="Fac-similé f. 1r" loading="lazy" decoding="async">
+                  <figcaption>f. 1r</figcaption>
+                </figure>
+                <span id="f1r-l1" class="lb"></span><br>
+                Dela Bibliothẽ. de Charles Adrien Picard 1742
+              </p>
             </div>
+
             <div>
               <p class="tei-head"><span id="f1r-l2" class="lb"></span><br>Prologue du preſent liure par maiſtre <span class="persName">robert<span id="f1r-l3" class="lb"></span><br>freſcher</span> bachelier forme en theologie tranſlateur.</p>
               <p id="f1r-p1"><span id="f1r-l4" class="lb"></span><br><span class="persName has-note" title="Pseudo-Bérose, auteur d'une Defloratio chaldaica en cinq livres imprimée à Rome en 1498 dans les&#xA;              Antiquitates d’Annius de Viterbe (non l’authentique Bérose du IVer siècle av.&#xA;              J.-C.)">Beroſe</span> ainſi que <span class="persName has-note" title="Historiographe romain juif du Ier siècle, auteur des Antiquités judaïques et du&#xA;              Contre Apion">iozephe</span> nous <a href="#bibl-flavius-josephe-antiquites" title="Flavius Josèphe, Antiquités judaïques – I.3.6" class="biblRef has-note">a laiſſe par eſcript</a><span id="f1r-l5" class="lb"></span><br>fut natif de la cite de babilone il eſtoit pbr̃e coronique.ͬ<span id="f1r-l6" class="lb"></span><br>et notaire public
