@@ -1,7 +1,7 @@
 # Annius of Viterbo — Antiquitates (1498)  
 **Digital scholarship and editions**
 
-This repository is dedicated to the works of **Annius of Viterbo (1437–1502)**, Dominican friar and historian, best known for his *Antiquitates* (Rome, 1498).  
+This repository is dedicated to the works of **Annius of Viterbo (1437–1502)**, Dominican friar and forgerer, best known for his *Antiquitates* (Rome, 1498).  
 It serves as a **scholarly hub** for digital resources, critical editions, and research tools relating to Annius and the reception of his writings.
 
 At present, the repository hosts a first sub-project:
@@ -15,14 +15,14 @@ Further sub-projects (critical editions, datasets, and digital tools) will be pr
 ---
 
 ## Repository structure
-
+```
 /
 ├─ docs/
 │  └─ BnF_Arsenal_ms-5219/
 │
 ├─ .gitattributes
 └─ README.md
-
+```
 ---
 
 ## License
