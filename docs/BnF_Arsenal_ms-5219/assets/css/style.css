@@ -531,5 +531,39 @@ html { font-size: calc(16px * var(--scale)); }
 }
 
 
+.ornament {
+  text-align: center;
+  font-size: 1em;   /* un po' più grande */
+  margin: 1.5em 0;
+  opacity: 0.7;
+}
+
+/* Nessun rientro per paragrafi speciali */
+.cta p,
+footer p {
+  text-indent: 0;
+}
+
+/* Forza la giustificazione del paragrafo .lead nell'home,
+   anche se il contenitore ha .center */
+.home p.lead {
+  text-align: justify;
+}
+
+html[lang="fr"] .home p.lead {
+  hyphens: auto;
+}
+
+
+/* Lettrine (drop cap) sulla prima lettera */
+.home p.lead::first-letter {
+  float: left;
+  font-size: 3.2em;            /* corretto: senza spazio */
+  line-height: 0.9;
+  margin: 0.05em 0.25em 0 0;   /* top right bottom left */
+  font-weight: normal;
+  color: inherit;              /* ← segue var(--fg) in entrambi i temi */
+  font-family: 'Linden Hill', serif;
+}
 
 
