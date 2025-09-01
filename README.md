@@ -18,8 +18,8 @@ Further sub-projects (critical editions, datasets, and digital tools) will be pr
 ```
 /
 ├─ docs/
-│  └─ BnF_Arsenal_ms-5219/
-│
+│  ├─ BnF_Arsenal_ms-5219/
+│  └─ index.html
 ├─ .gitattributes
 └─ README.md
 ```
