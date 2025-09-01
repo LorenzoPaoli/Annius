@@ -8,7 +8,7 @@ At present, the repository hosts a first sub-project:
 
 - **BnF Arsenal ms-5219 (Réserve), ff. 1r–8r**  
   A Middle French translation (ca. 1510–1511) by **Robert Frescher** of portions of the *Antiquitates*, with digital edition and facsimiles.  
-  👉 [Explore the edition](https://lorenzopaoli.github.io/Annius/BnF_Arsenal_ms-5219/)
+  👉 https://lorenzopaoli.github.io/Annius/BnF_Arsenal_ms-5219/
 
 Further sub-projects (critical editions, datasets, and digital tools) will be progressively added.
 
@@ -17,12 +17,11 @@ Further sub-projects (critical editions, datasets, and digital tools) will be pr
 ## Repository structure
 
 /
-├─ docs/ # Published website (GitHub Pages)
-│ └─ BnF_Arsenal_ms-5219/ # Sub-project: digital edition of ms. Arsenal 5219
+├─ docs/
+│  └─ BnF_Arsenal_ms-5219/
 │
 ├─ .gitattributes
-└─ README.md # You are here
-
+└─ README.md
 
 ---
 
@@ -31,7 +30,7 @@ Further sub-projects (critical editions, datasets, and digital tools) will be pr
 Unless otherwise indicated, all content in this repository is released under:  
 
 **Creative Commons Attribution 4.0 International (CC BY 4.0)**  
-👉 [Read the full license](https://creativecommons.org/licenses/by/4.0/)
+👉 https://creativecommons.org/licenses/by/4.0/
 
 ---
 
