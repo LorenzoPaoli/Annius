@@ -1,5 +1,5 @@
 param(
-  [string]$Root = "C:\humanites_numeriques\memoire\projet_hn_lorenzo_paoli"
+  [string]$Root = "C:\BnF_Arsenal_ms-5219"
 )
 
 function Get-TextContent {

@@ -1,7 +1,7 @@
 param(
-  [string]$XmlPath = "C:\humanites_numeriques\memoire\projet_hn_lorenzo_paoli\xml\ms_5219_d.xml",
-  [string]$XslPath = "C:\humanites_numeriques\memoire\projet_hn_lorenzo_paoli\xsl\tei2html.xsl",
-  [string]$OutPath = "C:\humanites_numeriques\memoire\projet_hn_lorenzo_paoli\transcription_ms_5219_d.html"
+  [string]$XmlPath = "C:\BnF_Arsenal_ms-5219\xml\ms_5219_d.xml",
+  [string]$XslPath = "C:\BnF_Arsenal_ms-5219xsl\tei2html.xsl",
+  [string]$OutPath = "C:\BnF_Arsenal_ms-5219\transcription_ms_5219_d.html"
 )
 
 Write-Host "XSL: $XslPath"

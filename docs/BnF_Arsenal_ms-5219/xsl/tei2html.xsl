@@ -281,7 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   <!-- =========== paragrafi con ID “f{lbl}-p{n}” =========== -->
   <xsl:template match="tei:p|tei:ab">
-    <xsl:variable name="folioN" select="preceding::tei:pb[1]/@n"/>
+    <xsl:variable name="folioN" select="(descendant::tei:pb[1]/@n | preceding::tei:pb[1]/@n)[last()]"/>
     <xsl:variable name="lbl">
       <xsl:call-template name="folioLabel">
         <xsl:with-param name="n" select="$folioN"/>
@@ -385,6 +385,12 @@ document.addEventListener('DOMContentLoaded', () => {
       <xsl:apply-templates/>
     </a>
   </xsl:template>
+
+ <!-- TEI headings come testo normale (niente titoloni) -->
+<xsl:template match="tei:head">
+  <p class="tei-head"><xsl:apply-templates/></p>
+</xsl:template>
+
 
   <!-- =========== fallback =========== -->
   <xsl:template match="@*|node()">
