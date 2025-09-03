@@ -99,5 +99,5 @@ Content is released under **Creative Commons Attribution 4.0 International (CC B
 
 This edition was developed within the University of Geneva (Institute for Reformation History, ARCHEOPOL project) in 2025.  
 It draws on the TEI guidelines and the digitization provided by the Bibliothèque nationale de France (Gallica).
-The edition internet site uses the Junicode 2 font (https://github.com/psb1558/Junicode-font), released under the SIL Open Font License (OFL).
+The edition and the internet site use the Junicode 2 font (https://github.com/psb1558/Junicode-font), released under the SIL Open Font License (OFL).
 
