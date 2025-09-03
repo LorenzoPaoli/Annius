@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>À propos — MS-5219</title>
-  <link href="https://fonts.googleapis.com/css2?family=Linden+Hill:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -55,6 +54,9 @@
 
 </section>
 
+<section class="ornament">
+  ⁂
+</section>
 
       <section id="about">
         <h2>Sur l'édition numérique du ms-5219</h2>
@@ -79,18 +81,43 @@
             github.com/LorenzoPaoli/Annius
           </a>
         </p>
-
         
+
+<!-- —— CRITÈRES D’ÉDITION —— -->
+
+<section id="criteres" aria-labelledby="criteres-title">
+  <h2 id="criteres-title">Critères d’édition</h2>
+
+  <h3><i>Normalisation (semi-diplomatique)</i></h3>
+  <ul>
+    <li>Remplacement de graphèmes anciens (p. ex. s longue → s).</li>
+    <li>Développement des abréviations usuelles.</li>
+    <li>Normalisation u/v et i/j selon l’usage moderne.</li>
+    <li>Années du monde rendues en chiffres arabes (p. ex. 4859).</li>
+    <li>Numéros ordinaux des rois en chiffres romains modernes (p. ex. IV<sup>e</sup>).</li>
+    <li>Références numérales aux sources harmonisées (p. ex. XXIII<sup>e</sup> livre).</li>
+  </ul>
+
+  <p>Aucune réécriture morphologique ni réforme orthographique complète : la transparence avec le texte source est privilégiée. Les deux strates — graphématique et semi-diplomatique — sont proposées parallèlement aux fac-similés du manuscrit.</p>
+</section>
+
+<section class="ornament">
+  ⁂
+</section>
+
 <section id="info">
+
+
+
  <p><i>Cette édition a été réalisée dans le cadre du Certificat en Humanités Numériques de l’Université de Genève sous la direction de
   <a href="https://www.unige.ch/lettres/humanites-numeriques/equipe/collaborateurs/simon-gabay" target="_blank" rel="noopener noreferrer">Simon Gabay</a>.
 </i></p>
 
 <p class="easter-egg">
   Faites-nous part de votre avis et laissez votre commentaire
-  <a href="https://www.youtube.com/shorts/rf93LokFoT0"
+  <a href="https://www.youtube.com/watch?v=l9PkFw2hoI0"
      target="_blank" rel="noopener noreferrer"
-     aria-label="Surprenez-nous avec votre commentaire (ouvre un Short tout à fait irrévérencieux)">
+     aria-label="Surprenez-nous avec votre commentaire">
     ici
   </a>.
 </p>
@@ -102,7 +129,7 @@
 
        
 
-    <footer class="center"><p class="note">© 2025 Université de Genève | Réalisation : Lorenzo Paoli</p></footer>
+    <footer class="center"><p class="note">2025 | Réalisation : Lorenzo Paoli</p></footer>
   </div>
 <!-- Overlay lightbox -->
 <div class="lb" aria-hidden="true">
@@ -114,7 +141,7 @@
 <script src="assets/js/search.js"></script>
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/assets/js/service-worker.js');
+navigator.serviceWorker.register('assets/js/service-worker.js');
   }
 </script>
 

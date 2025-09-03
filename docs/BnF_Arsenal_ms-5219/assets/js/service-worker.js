@@ -1,14 +1,64 @@
-const CACHE = 'ms5219-v1';
-const ASSETS = [
-  '/', 'index_ms_5219.html', 'a-propos.html', 'auctoritates.html', 'genealogie.html',
-  'transcription_ms_5219_d.html', 'transcription_ms_5219_sd.html',
-  'assets/css/style.css',
-  // aggiungi immagini essenziali e JS
+// BUMPA QUESTO NOME A OGNI DEPLOY CON CAMBI JS/CSS
+const CACHE_NAME = 'site-cache-v5';
+
+// (Opzionale) precache di base: NON mettere search-index.json qui
+const PRECACHE_URLS = [
+  './',
+  './index_ms_5219.html',
+  './assets/css/style.css',
+  './assets/js/main.js',
+  './assets/js/search.js',
 ];
 
-self.addEventListener('install', e=>{
-  e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));
+// File da servire sempre "rete prima" (dati che vuoi aggiornati)
+const NETWORK_FIRST = ['assets/search-index.json'];
+
+// Install: precache + attiva subito
+self.addEventListener('install', (event) => {
+  self.skipWaiting();
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(c => c.addAll(PRECACHE_URLS).catch(()=>{}))
+  );
 });
-self.addEventListener('fetch', e=>{
-  e.respondWith(caches.match(e.request).then(r=> r || fetch(e.request)));
+
+// Activate: elimina cache vecchie e prendi controllo subito
+self.addEventListener('activate', (event) => {
+  event.waitUntil(
+    caches.keys().then(keys =>
+      Promise.all(keys.map(k => k === CACHE_NAME ? null : caches.delete(k)))
+    ).then(() => self.clients.claim())
+  );
+});
+
+const isNetworkFirst = (url) =>
+  NETWORK_FIRST.some(p => url.endsWith(p) || url.includes(p));
+
+self.addEventListener('fetch', (event) => {
+  const { request } = event;
+  const url = new URL(request.url);
+
+  // limita allo stesso origin (GH Pages del repo)
+  if (url.origin !== location.origin) return;
+
+  // rete-prima per l'indice di ricerca (sempre fresco)
+  if (isNetworkFirst(url.pathname)) {
+    event.respondWith(
+      fetch(request).then(res => {
+        caches.open(CACHE_NAME).then(c => c.put(request, res.clone()));
+        return res;
+      }).catch(() => caches.match(request))
+    );
+    return;
+  }
+
+  // stale-while-revalidate per il resto (JS/CSS/HTML/immagini)
+  event.respondWith(
+    caches.match(request).then(cached => {
+      const fetchPromise = fetch(request).then(res => {
+        caches.open(CACHE_NAME).then(c => c.put(request, res.clone()));
+        return res;
+      }).catch(() => cached || Promise.reject('offline'));
+      return cached || fetchPromise;
+    })
+  );
 });
