@@ -566,4 +566,34 @@ html[lang="fr"] .home p.lead {
   font-family: 'Linden Hill', serif;
 }
 
+/* ── Suggerimenti della search: testo nero ─────────────────────────── */
+.suggest-list li,
+.suggest-list a {
+  color: #000 !important;           /* testo nero */
+}
+
+.suggest-list a {
+  border-bottom: none !important;   /* niente tratteggio rosa sui link */
+}
+
+/* Hover/Focus: mantieni il testo nero (lo sfondo rosa va bene se ti piace) */
+.suggest-list li:hover,
+.suggest-list li:focus,
+.suggest-list li:hover a,
+.suggest-list li:focus a {
+  color: #000 !important;
+  /* background: #fff6fa;  ← già definito: puoi lasciarlo così o cambiarlo */
+}
+
+/* Se la suggest-box sta dentro la .top-menu, annulla il bianco ereditato */
+.top-menu .suggest-box a {
+  color: #000 !important;
+}
+
+/* (Opzionale) stato "attivo" gestito da JS con una classe */
+.suggest-list .is-active,
+.suggest-list .is-active a {
+  background: #fff6fa;
+  color: #000 !important;
+}
 
